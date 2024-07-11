@@ -106,9 +106,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
             display: inline-block;
             color: #5e5c5c !important;
             font-family: 'Black Han Sans', sans-serif;
-            font-size: 23px;
+            font-size: 22px;  //폰트 깨짐으로 인한 사이즈 수정.
             font-style: normal;
-            font-weight: 300;
+            font-weight: 300; //모든 폰트 weight 300으로 수정.
             line-height: normal;
             &:hover{
                 color: red !important;
@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
             top: -46px;
             width: 882px;
             height: 90px;
-            background-image: url(../img/svg/yellow_menu.svg);
+            background-image: url(../img/svg/);
 
             ul{
                 padding: 50px;
@@ -191,7 +191,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         font-family:"Black Han Sans", sans-serif;
         font-size: 38px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         line-height: normal;
     
         strong{
