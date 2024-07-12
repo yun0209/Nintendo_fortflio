@@ -71,12 +71,30 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
 
 .ti_Blank{
-    margin-bottom : 70px;
+    margin-bottom : 70px !important;
 }
 .st_Blank{
-    margin-bottom:20px;
+    margin-bottom:15px !important;
     }
-
+.textB_18{
+        color:#3E3E3E;
+        font-family:"Noto Sans KR";
+        font-size:17px;
+        font-style:normal;
+        font-weight:800;
+        line-height:normal;
+        
+}
+        
+.textB_W18{
+        color:#ffffff;
+        font-family:"Noto Sans KR";
+        font-size:17px;
+        font-style:normal;
+        font-weight:800;
+        line-height:normal;
+         letter-spacing:-0.72px;
+}
 
 #hd {
     
@@ -191,6 +209,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
  
 }
 #news_swiper{
+  
 
     h2{
         color: #033333 !important;
@@ -203,23 +222,61 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         strong{
             color: red;
         }
+        .d_11{
+            position: relative;
+            top: 7px;
+        }
         p{
             width: 194px;
         }
     }
-
+    
     .swiper {
+        margin-left: 48px;
         overflow: hidden;
     }
     .swiper-slide {
         display: flex;
         justify-content: center;
         align-items: center;
+        p{
+            text-wrap: nowrap;
+        }
     }
     .news_img1 img {
-        width: 100%;
-        height: auto;
+        width: 499px;
+        height: 301;
         border-radius: 15px;
+    }
+    .swiper-wrapper{
+        position:relative;
+        width: 1920px;
+            height: auto;
+        .button-next{
+            
+            position: absolute;
+            z-index: 100;
+
+            z-index: 100 !important;
+            width: 48px;
+            height: 48px;
+            margin: auto;
+            left: 0;
+            background-image: url(../img/svg/arrow_left.svg);
+
+        }
+        .button-prev{
+            position: absolute;
+            z-index: 100 !important;
+            right: 0;
+            width: 48px;
+            height: 48px;
+            margin: auto;
+            right: 0;
+            
+            background-image: url(../img/svg/arrow_right.svg);
+
+        }
     }
 
 }
