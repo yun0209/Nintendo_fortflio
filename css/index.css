@@ -179,6 +179,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 #news_swiper .swiper {
   margin-left: 48px;
   overflow: hidden;
+  position: relative;
 }
 #news_swiper .swiper-slide {
   display: flex;
@@ -194,27 +195,24 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   border-radius: 15px;
 }
 #news_swiper .swiper-wrapper {
-  position: relative;
   width: 1920px;
   height: auto;
 }
-#news_swiper .swiper-wrapper .button-next {
+#news_swiper .button-next,
+#news_swiper .button-prev {
+  top: 0;
+  bottom: 0;
   position: absolute;
-  z-index: 100;
   z-index: 100 !important;
   width: 48px;
   height: 48px;
-  margin: auto;
-  left: 0;
-  background-image: url(../img/svg/arrow_left.svg);
+  top: calc(50% - 50px);
 }
-#news_swiper .swiper-wrapper .button-prev {
-  position: absolute;
-  z-index: 100 !important;
-  right: 0;
-  width: 48px;
-  height: 48px;
-  margin: auto;
-  right: 0;
+#news_swiper .button-prev {
+  right: 28px;
   background-image: url(../img/svg/arrow_right.svg);
+}
+#news_swiper .button-next {
+  left: 28px;
+  background-image: url(../img/svg/arrow_left.svg);
 }
