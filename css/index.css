@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 #hd .gnb .gnb_li a {
   display: inline-block;
-  color: #5e5c5c !important;
+  color: #474545 !important;
   font-family: "Black Han Sans", sans-serif;
   font-size: 22px;
   font-style: normal;
