@@ -19,7 +19,7 @@
 <body>
     <section id="hd" class="bg-w">
         
-        <div class=" d-flex jsb aic w-100 py-60">
+        <div class=" d-flex jsb aic w-100 py-60 container">
             <h1>
                 <a href="">
                     <img src="./img/svg/nintendo_logo.svg" alt="로고">
@@ -46,16 +46,16 @@
         </div>
         
     </section>
-    <section id="mainBanner" class="mb-3">
-        
-        <div class="mainp ">
-            <div>
+    <section id="mainBanner" class="mb-3 mt-5">
+        <container class="d-flex jcc aic ">
+            <div class="mainp overflow-hidden ">
+                
                 <p>
                     <a href="https://www.nintendo.com/jp">
                         <img src="./img/mario_banner.png" alt="">
                     </a>
                 </p>
-                <div class="smenu col d-flex aic mx-70">
+                <div class="smenu col d-flex aic me-auto  ms-auto ">
     
                     <ul class="d-flex col-10 jsb ms-auto me-auto">
                         <li>
@@ -68,22 +68,30 @@
                             <a href="" class="sb_menuT">온라인e숍</a></li>
                     </ul>
                 </div>
+                    
                 
+                
+                
+    
             
             </div>
             
-
+        </container>
         
-        </div>
         
     </section>
-    <section id="news_swiper" class="col">
+
+
+    <section id="news_swiper" class="col mb-140">
         <div class="">
             <h2 class="col-1  ms-auto me-auto ti_Blank ">
-                <p class="d_11 text-nowrap">
-                    <strong>새로운 뉴스</strong>를
-                </p>
-                <p class="ms-3 ">만나보세요!</p>
+                <div class="me-auto ms-auto">
+                    <p class="d_11 text-nowrap me-auto ms-auto">
+                        <strong>새로운 뉴스</strong>를
+                    </p>
+                    <p class="ms-3 ">만나보세요!</p>
+                </div>
+                
                 
             </h2>
             <div class="position-relative">
@@ -186,7 +194,25 @@
 
     </section>
     
-    
+    <section id="mContent" class="mb-140">
+        <div class="redB ms-auto me-auto">
+            <h2>it'a me <br>Mario !</h2>
+            <p>
+                빨간 모자에 파란색 바지, M 마크에 콧수염이 특징인,항상 쾌활하고 밝은 마리오.<br>
+                달리고, 뛰고, 슈퍼 버섯으로 파워 업! 다양한 액션과 아이템을 다루면서세계를 모험해 나갈 것입니다.<br>
+                마리오는 골프와 테니스를 비롯해 스포츠도 잘하고 화려한 드라이빙 기술을 선보이기도합니다.<br>
+                루이지와 피치 공주, 요시 등의 동료들과 함께 앞으로도 마리오의 모험은 계속됩니다.
+            </p>
+        </div>
+        <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+        <swiper></swiper>
+
+    </section>
+ 
+
       <!-- Swiper JS -->
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
@@ -194,7 +220,7 @@
       <script>
         let swiper = new Swiper(".mySwiper", {
           slidesPerView: 3.6,
-          spaceBetween: 15,
+          spaceBetween: 20,
           loop:true,
           navigation: {
             nextEl: ".button-prev",

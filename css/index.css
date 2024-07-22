@@ -63,6 +63,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   border-radius: 57px;
 }
 
+.mb-140 {
+  margin-bottom: 140px;
+}
+
 .ti_Blank {
   margin-bottom: 70px !important;
 }
@@ -130,7 +134,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 
 #mainBanner .mainp {
-  margin: 39px 48px;
+  margin: auto;
+  left: -50%;
 }
 #mainBanner .mainp .smenu {
   position: relative;
@@ -215,4 +220,13 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 #news_swiper .button-next {
   left: 28px;
   background-image: url(../img/svg/arrow_left.svg);
+}
+
+#mContent .redB {
+  background: url(../img/png/dotte_red.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  width: 1824px;
+  height: 1200px;
 }
