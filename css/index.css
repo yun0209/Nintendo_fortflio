@@ -63,35 +63,134 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   border-radius: 57px;
 }
 
-.mb-140 {
-  margin-bottom: 140px;
+.gnbT {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.titleT {
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.leadcopy {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.68px;
+}
+
+.inT {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -0.68px;
+  line-height: normal;
+}
+
+.b_Menu {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.b_MenuB {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.text-black {
+  color: #000;
+}
+
+.fontNoto {
+  font-family: "Noto Sans KR";
+}
+
+.fontBase {
+  font-family: "Black Han Sans";
+}
+
+.footer_T {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.68px;
+}
+
+.m_title {
+  color: #fff;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.m_Menu {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.m_Menu26 {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.m_Movie {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.m_Movie40 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.gNm {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cNm {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cententB {
+  margin-bottom: 170px;
 }
 
 .ti_Blank {
   margin-bottom: 70px !important;
 }
 
-.st_Blank {
+.ti_BlankTop {
+  padding-top: 70px;
+}
+
+.ct_Blank {
   margin-bottom: 15px !important;
-}
-
-.textB_18 {
-  color: #3E3E3E;
-  font-family: "Noto Sans KR";
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
-.textB_W18 {
-  color: #ffffff;
-  font-family: "Noto Sans KR";
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  letter-spacing: -0.72px;
 }
 
 #hd {
@@ -223,10 +322,62 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 
 #mContent .redB {
+  position: relative;
   background: url(../img/png/dotte_red.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
   width: 1824px;
-  height: 1200px;
+  height: 2100px;
+}
+#mContent .redB p {
+  padding-bottom: 1rem;
+  color: #fff;
+}
+#mContent .redB .yBox {
+  background: url(../img/svg/ybox.svg);
+  width: 256px;
+  height: 256px;
+  position: absolute;
+  top: -4%;
+  right: 20px;
+}
+#mContent .redB .mario {
+  position: absolute;
+  background: url(../img/svg/mario_img.svg) no-repeat;
+  width: 500px;
+  height: 609px;
+  left: -40px;
+  bottom: 0;
+  top: 6%;
+  z-index: 10000;
+}
+#mContent .redB .rZone {
+  overflow: hidden;
+  position: absolute;
+  background-color: red;
+  width: 1918px;
+  height: 474px;
+  left: -3%;
+}
+#mContent .redB .marioSwiper .swiper {
+  overflow: hidden;
+  position: relative;
+}
+#mContent .redB .marioSwiper .swiper-slide {
+  width: 450px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mContent .redB .marioSwiper .swiper-slide a img {
+  width: 450px;
+  height: 300px;
+  border-radius: 15px;
+}
+#mContent .redB .marioSwiper .swiper-wrapper {
+  margin: 0 0 auto auto;
+  width: 1400px;
+  height: auto;
 }

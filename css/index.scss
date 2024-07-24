@@ -68,35 +68,153 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 //     padding: 0 3rem;
 // }
 
+//대메뉴 텍스트
+.gnbT{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 
-.mb-140{
-    margin-bottom: 140px;
-  }
+}
+
+//타이틀 텍스트
+.titleT{
+   
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+//리드카피
+.leadcopy{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.68px;
+}
+
+//스몰 리드카피
+.inT{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: -0.68px;
+    line-height: normal;
+}
+
+//하단메뉴
+.b_Menu{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+// 하단메뉴 의 소메뉴 
+.b_MenuB{
+    
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.text-black{
+    color: #000;
+    
+}
+.fontNoto{
+    font-family: "Noto Sans KR";
+}
+.fontBase{
+    font-family: "Black Han Sans";
+}
+
+//푸터 
+.footer_T{
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.68px;
+}
+
+//마리오 컨텐츠 타이틀
+.m_title{
+    color: #fff;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+//마리오 메뉴 텍스트
+.m_Menu{
+  
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.m_Menu26{
+    
+
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+//마리오 무비 타이틀 텍스트
+.m_Movie{
+
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.m_Movie40{
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400; 
+    line-height: normal;
+}
+//게임 컨텐츠 텍스트
+.gNm{
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+//캐릭터 이름 텍스트
+.cNm{
+ 
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+// 각 컨텐츠의 간격
+.cententB{
+    margin-bottom: 170px;
+}
+//타이틀과 컨텐츠의 간격
 .ti_Blank{
     margin-bottom : 70px !important;
 }
-.st_Blank{
+.ti_BlankTop{
+    padding-top: 70px;
+}
+//컨텐츠와 리드 카피의 간격
+.ct_Blank{
     margin-bottom:15px !important;
     }
-.textB_18{
-        color:#3E3E3E;
-        font-family:"Noto Sans KR";
-        font-size:17px;
-        font-style:normal;
-        font-weight:800;
-        line-height:normal;
-        
-}
-        
-.textB_W18{
-        color:#ffffff;
-        font-family:"Noto Sans KR";
-        font-size:17px;
-        font-style:normal;
-        font-weight:800;
-        line-height:normal;
-         letter-spacing:-0.72px;
-}
 
 #hd {
     
@@ -289,13 +407,80 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
 }
 #mContent{
+
     .redB{
+        position: relative;
         background: url(../img/png/dotte_red.png);
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 20px;
         width: 1824px;
-        height: 1200px;
+        height: 2100px;
+        p{
+            padding-bottom: 1rem;
+            color: #fff;
+        }
+        .yBox{
+            background: url(../img/svg/ybox.svg);
+            width: 256px;
+            height: 256px;
+            position: absolute;
+            top: calc(-4%);
+            right: 20px;
+        }
+        .mario{
+            position: absolute;
+            background: url(../img/svg/mario_img.svg) no-repeat;
+            width: 500px;
+            height: 609px;
+            left: -40px;
+            bottom: 0;
+            top: calc(6%);
+            z-index: 10000;
+        }
+
+        .rZone{
+            overflow: hidden;
+            position: absolute;
+            background-color: red;
+            width: 1918px;
+            height: 474px;
+            left: -3%;
+        }
+        .marioSwiper{
+            .swiper {
+                
+                overflow: hidden;
+                position: relative;
+            }
+            .swiper-slide {
+                width: 450px;
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    img{
+                        width: 450px;
+                        height: 300px;
+                        border-radius: 15px;
+                    }
+                }
+            }
+            .swiper-wrapper{
+                    margin: 0 0 auto auto;
+                    width: 1400px;
+                    height: auto;
+                
+               
+            }
+            
+        }
+
+        
     }
+
+
+    
 
 }
