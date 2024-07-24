@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 .leadcopy{
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     line-height: normal;
     letter-spacing: -0.68px;
 }
@@ -170,7 +170,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 //마리오 무비 타이틀 텍스트
 .m_Movie{
-
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -367,6 +366,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         align-items: center;
         p{
             text-wrap: nowrap;
+            color: #3e3e3e;
         }
     }
     .news_img1 img {
@@ -416,6 +416,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         border-radius: 20px;
         width: 1824px;
         height: 2100px;
+        
         p{
             padding-bottom: 1rem;
             color: #fff;
@@ -426,56 +427,81 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
             height: 256px;
             position: absolute;
             top: calc(-4%);
-            right: 20px;
+            right:calc(-1%);
         }
         .mario{
             position: absolute;
             background: url(../img/svg/mario_img.svg) no-repeat;
             width: 500px;
             height: 609px;
-            left: -40px;
+            left: calc(-2.2%);
             bottom: 0;
-            top: calc(6%);
+            top: calc(7%);
             z-index: 10000;
         }
+        
 
         .rZone{
+            background: url(../img/svg/redzone.svg)no-repeat;
             overflow: hidden;
             position: absolute;
-            background-color: red;
-            width: 1918px;
-            height: 474px;
-            left: -3%;
-        }
-        .marioSwiper{
-            .swiper {
-                
-                overflow: hidden;
-                position: relative;
-            }
-            .swiper-slide {
-                width: 450px;
-                height: 300px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                a{
-                    img{
-                        width: 450px;
-                        height: 300px;
-                        border-radius: 15px;
-                    }
-                }
-            }
-            .swiper-wrapper{
-                    margin: 0 0 auto auto;
-                    width: 1400px;
-                    height: auto;
-                
-               
-            }
+            width: 1911px;
+            height: 511px;
+            left: calc(-48px);
+            top: calc(29.2%);
             
+            .marioSwiper{
+                top: calc(50%);
+                .swiper {
+                    
+                    overflow: hidden;
+                    position: relative;
+                }
+                .swiper-slide {
+                    width: 450px;
+                    height: 350px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p{
+                        color: #fff;
+                        a{
+                            img{
+                                width: 450px;
+                                height: 300px;
+                                border-radius: 15px;
+                            }
+                        }
+
+                    }
+                    
+                }
+                .swiper-wrapper{
+                        margin: 0 0 auto auto;
+                        width: 1400px;
+                        height: auto;
+                }
+                
+            }
+
+            .button-next{
+                position: absolute;
+                left: calc(9%);
+                bottom: 0;
+                top: calc(35%);
+                z-index: 1000;
+
+                
+            }
+            .button-prev{
+                position: absolute;
+                right: calc(9%);
+                top: calc(35%);
+                z-index: 1000;
+                transform: rotate(180deg);
+            }
         }
+        
 
         
     }

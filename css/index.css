@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 .leadcopy {
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   line-height: normal;
   letter-spacing: -0.68px;
 }
@@ -292,6 +292,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 #news_swiper .swiper-slide p {
   text-wrap: nowrap;
+  color: #3e3e3e;
 }
 #news_swiper .news_img1 img {
   width: 499px;
@@ -340,44 +341,65 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   height: 256px;
   position: absolute;
   top: -4%;
-  right: 20px;
+  right: -1%;
 }
 #mContent .redB .mario {
   position: absolute;
   background: url(../img/svg/mario_img.svg) no-repeat;
   width: 500px;
   height: 609px;
-  left: -40px;
+  left: -2.2%;
   bottom: 0;
-  top: 6%;
+  top: 7%;
   z-index: 10000;
 }
 #mContent .redB .rZone {
+  background: url(../img/svg/redzone.svg) no-repeat;
   overflow: hidden;
   position: absolute;
-  background-color: red;
-  width: 1918px;
-  height: 474px;
-  left: -3%;
+  width: 1911px;
+  height: 511px;
+  left: -48px;
+  top: 29.2%;
 }
-#mContent .redB .marioSwiper .swiper {
+#mContent .redB .rZone .marioSwiper {
+  top: 50%;
+}
+#mContent .redB .rZone .marioSwiper .swiper {
   overflow: hidden;
   position: relative;
 }
-#mContent .redB .marioSwiper .swiper-slide {
+#mContent .redB .rZone .marioSwiper .swiper-slide {
   width: 450px;
-  height: 300px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#mContent .redB .marioSwiper .swiper-slide a img {
+#mContent .redB .rZone .marioSwiper .swiper-slide p {
+  color: #fff;
+}
+#mContent .redB .rZone .marioSwiper .swiper-slide p a img {
   width: 450px;
   height: 300px;
   border-radius: 15px;
 }
-#mContent .redB .marioSwiper .swiper-wrapper {
+#mContent .redB .rZone .marioSwiper .swiper-wrapper {
   margin: 0 0 auto auto;
   width: 1400px;
   height: auto;
+}
+#mContent .redB .rZone .button-next {
+  position: absolute;
+  left: 9%;
+  bottom: 0;
+  top: 35%;
+  z-index: 1000;
+}
+#mContent .redB .rZone .button-prev {
+  position: absolute;
+  right: 9%;
+  top: 35%;
+  z-index: 1000;
+  transform: rotate(180deg);
 }
