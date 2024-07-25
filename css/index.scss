@@ -415,7 +415,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         background-size: cover;
         border-radius: 20px;
         width: 1824px;
-        height: 2100px;
+        height: 2235px;
         
         p{
             padding-bottom: 1rem;
@@ -487,9 +487,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
             .button-next{
                 position: absolute;
                 left: calc(9%);
-                bottom: 0;
                 top: calc(35%);
                 z-index: 1000;
+                transform: rotate(-180deg);
 
                 
             }
@@ -498,8 +498,29 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                 right: calc(9%);
                 top: calc(35%);
                 z-index: 1000;
-                transform: rotate(180deg);
+                
             }
+        }
+        .movie{
+            position: absolute;
+            z-index: 1000;
+            top: calc(57%);
+            .mMovie{
+                width: 547px;
+                height: 144px;
+                background: url(../img/svg/mario_Movie.svg)no-repeat;
+    
+            }
+            iframe{
+                display: none;
+                border-radius: 20%;
+            }
+            .youtube_img{
+                width: 1420px;
+                height: 525px;
+                background: url(../img/svg/mario_Movie_in.svg )no-repeat;
+            }
+
         }
         
 
@@ -510,3 +531,5 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     
 
 }
+
+
