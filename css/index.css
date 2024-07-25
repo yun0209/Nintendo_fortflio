@@ -324,7 +324,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
 #mContent .redB {
   position: relative;
-  background: url(../img/png/dotte_red.png);
+  background: url(../img/png/dotte_red.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -354,11 +354,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   z-index: 10000;
 }
 #mContent .redB .rZone {
-  background: url(../img/svg/redzone.svg) no-repeat;
+  background: url(../img/svg/r_zone.svg) no-repeat;
   overflow: hidden;
   position: absolute;
   width: 1911px;
-  height: 511px;
+  height: 528px;
   left: -48px;
   top: 29.2%;
 }
