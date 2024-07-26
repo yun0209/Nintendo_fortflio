@@ -11,6 +11,22 @@
   font-weight: 300;
   font-style: normal;
 }
+@keyframes move {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes mover {
+  0% {
+    right: -10%;
+  }
+  100% {
+    right: -1%;
+  }
+}
 body {
   cursor: url("/img/svg/op_mushroom.svg"), auto;
 }
@@ -332,6 +348,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   background-image: url(../img/svg/arrow_left.svg);
 }
 
+#mContent {
+  padding-top: 98px;
+  overflow: hidden;
+}
 #mContent .redB {
   position: relative;
   background: url(../img/png/dotte_red.jpg);
@@ -352,16 +372,31 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   position: absolute;
   top: -4%;
   right: -1%;
+  z-index: 10000;
+  animation: mover 2s;
 }
 #mContent .redB .mario {
   position: absolute;
-  background: url(../img/svg/mario_img.svg) no-repeat;
-  width: 500px;
-  height: 609px;
-  left: -2.2%;
+  background: url(../img/png/mario.png) no-repeat;
+  width: 518px;
+  height: 628px;
   bottom: 0;
-  top: 7%;
+  top: 5%;
   z-index: 10000;
+  animation: move 2s;
+}
+#mContent .redB .m_ybar {
+  width: 192px;
+  height: 72px;
+}
+#mContent .redB .m_ybar p {
+  position: absolute;
+  text-wrap: nowrap;
+  color: #EC6907;
+}
+#mContent .redB .m_ybar p img {
+  width: 184px !important;
+  height: 72px !important;
 }
 #mContent .redB .rZone {
   background: url(../img/svg/r_zone.svg) no-repeat;
@@ -370,7 +405,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   width: 1911px;
   height: 528px;
   left: -48px;
-  top: 29.2%;
+  top: 27.2%;
 }
 #mContent .redB .rZone .marioSwiper {
   top: 50%;
@@ -415,7 +450,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 #mContent .redB .movie {
   position: absolute;
   z-index: 1000;
-  top: 57%;
+  top: 54%;
 }
 #mContent .redB .movie .mMovie {
   width: 547px;
@@ -441,15 +476,16 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   background-color: #ffffff; /* 버튼 배경색 */
   border: none; /* 테두리 없음 */
   cursor: pointer; /* 커서 모양 변경 */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 */
+  box-shadow: 0 4px 15px rgba(10, 10, 10, 0.438); /* 그림자 */
   transition: background-color 0.3s, transform 0.3s; /* 전환 효과 */
-  -webkit-clip-path: polygon(0 0, 0% 0, 100% 50%, 0% 100%, 0 100%) !important;
-          clip-path: polygon(0 0, 0% 0, 100% 50%, 0% 100%, 0 100%) !important; /* 오른쪽으로 뾰족한 모양 */
+  -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
+          clip-path: polygon(0 0, 100% 50%, 0 100%); /* 오른쪽으로 뾰족한 모양 */
+  position: absolute; /* 위치 설정 */
   left: 47%;
   top: 45%;
 }
 #mContent .redB .movie .youtube_img .play-button:hover {
-  background-color: #f0f0f0; /* 마우스 오버 시 배경색 */
+  background-color: #e00303; /* 마우스 오버 시 배경색 */
   transform: scale(1.1); /* 마우스 오버 시 확대 */
 }
 
