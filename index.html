@@ -87,12 +87,12 @@
 
     <section id="news_swiper" class="col mb-5">
         <div class="">
-            <h2 class="ms-auto me-auto ti_Blank ">
+            <h2 class="ms-auto me-auto ti_Blank fontBase titleT ">
                 <p class=" text-center w-100">
-                    <strong>새로운 뉴스</strong>를
+                    <span>새로운 뉴스</span>를
                 </p>
                 <p class="text-center w-100">만나보세요!</p>  
-        </h2>
+            </h2>
             <div class="position-relative">
                 <div class="swiper mySwiper ">
                     <div class="swiper-wrapper">
@@ -323,24 +323,19 @@
 
                     </iframe>
                 </p>
-                <p> </p>
+                
             </div>
             
         </div>
-        <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-        </ul>
-        <swiper></swiper>
-
+        
     </section>
 
   
     <section id="soft_Swiper" class="col cententB">
         <div class="">
-            <h2 class="ms-auto me-auto ti_Blank ">
+            <h2 class="ms-auto me-auto ti_Blank fontBase titleT">
                     <p class=" text-center w-100">
-                        <strong>새로운 소프트웨어</strong>가
+                        <span>새로운 소프트웨어</span>가
                     </p>
                     <p class="text-center w-100">출시됐어요!</p>  
             </h2>
@@ -456,21 +451,34 @@
                             
                             </div>
                         </div>
-
-                        
-        
                     </div>
-                    
-                    
-                    
-                </div>
-                
+                </div>  
+
                 <div class="button-next"></div>
                 <div class="button-prev"></div>
             </div>
             
         </div>
         
+
+    </section>
+    <section id="crContent" class="cententB">
+        <div class="">
+            <h2 class="ms-auto me-auto ti_Blank fontBase titleT ">
+                <p class=" text-center w-100">
+                    <span>닌텐도의 다양한 캐릭터</span>를
+                </p>
+                <p class="text-center w-100">만나보세요!</p>  
+            </h2>
+            <div class="crdiv ms-auto me-auto">
+                <ul class="d-flex justify-content-between align-items-center">
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
 
     </section>
     
@@ -481,7 +489,7 @@
     
       <!-- Initialize Swiper -->
       <script>
-        let swiper = new Swiper(".mySwiper", {
+        const swiper = new Swiper(".mySwiper", {
           slidesPerView: 3.6,
           spaceBetween: 20,
           loop:true,
@@ -494,10 +502,8 @@
           
           
         });
-      </script>
 
-    <script>
-        let swiperM = new Swiper(".marioSwiper", {
+        const swiperM = new Swiper(".marioSwiper", {
         slidesPerView: 3,
         spaceBetween: 15,
         loop:true,
@@ -510,9 +516,8 @@
         
         
         });
-    </script>
-    <script>
-        let swiperS = new Swiper(".sSwiper", {
+   
+        const swiperS = new Swiper(".sSwiper", {
           slidesPerView: 3.6,
           spaceBetween: 20,
           loop:true,
@@ -525,6 +530,36 @@
           
           
         });
+
+        const targetElement = document.querySelector("#mContent");
+            const yBoxElement = document.querySelector(".yBox");
+
+            function yboxlode() {
+                const targetOffsetTop = targetElement.offsetTop; //상단
+                const scrollPosition = window.pageYOffset;
+
+                if (scrollPosition >= targetOffsetTop - 300) {
+                    yBoxElement.classList.add("action");
+                } 
+            }
+
+            window.addEventListener("scroll", yboxlode);
+            // 초기 로드 시에도 가시성 검사
+            yboxlode();
+
+        const marioElement = document.querySelector(".mario");
+        
+        function mariogo(){
+            const targetOffsetTop = targetElement.offsetTop;
+            const scrollPosition = window.pageYOffset;
+            if (scrollPosition >= targetOffsetTop - 300) {
+                   marioElement.classList.add("go");
+                }  
+        }
+        window.addEventListener("scroll", mariogo);
+        mariogo();
+        
+        
       </script>
 
     

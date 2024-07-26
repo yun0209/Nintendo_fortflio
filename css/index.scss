@@ -11,12 +11,17 @@
     font-style: normal;
 }
 @keyframes move {
-    0% { left: -10%; }
-    100% { left: 0%; }
+    0% { transform: translateX(-109%);
+         opacity: 70%;}
+    100% { transform: translateX(0%);
+           opacity: 100%;}
 }
 @keyframes mover {
-    0% { right: -10%; }
-    100% { right: -1%; }
+    0% { 
+        transform: translateX(117%);
+        opacity: 70%;  } //너비의 값의 117만큼 이동
+    100% { transform: translateX(10%); 
+           opacity: 100%;}
 }
 body {
     cursor: url('/img/svg/op_mushroom.svg'),auto;
@@ -293,19 +298,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 
 #mainBanner{
-    .container{
-        
-    }
+    
     .mainp{
         margin: auto;
         left: calc(-50%);
-
-
-        a{
-            img{
-            
-            }
-        }
     
         .smenu{
             position: relative;
@@ -313,6 +309,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
             width: 882px;
             height: 90px;
             background-image: url(../img/svg/yellow_menu.svg);
+            box-shadow: 0 0px 20px 0 rgba(10, 10, 10, .548);
 
             ul{
                 padding: 50px;
@@ -350,13 +347,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
     h2{
         color: #033333 !important;
-        font-family:"Black Han Sans", sans-serif;
-        font-size: 38px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-    
-        strong{
+        span{
             color: red;
         }
         .d_11{
@@ -413,7 +404,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     .button-next{
             
         left: 28px;
-
         background-image: url(../img/svg/arrow_left.svg);
 
     }
@@ -442,20 +432,31 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
             width: 256px;
             height: 256px;
             position: absolute;
+            opacity: 70%;
             top: calc(-4%);
-            right:calc(-1%);
-            z-index: 10000;
+            right:0;
+            transform: translateX(117%);
+            z-index: 1000;
+            &.action{
             animation: mover 2s;
+            animation-fill-mode: forwards;
+            
+            }
         }
+      
         .mario{
             position: absolute;
             background: url(../img/png/mario.png) no-repeat;
             width: 518px;
             height: 628px;
             bottom: 0;
+            transform: translateX(-109%);
             top: calc(5%);
             z-index: 10000;
-            animation: move 2s;
+            &.go{
+                animation: move 2.5s;
+                animation-fill-mode: forwards;
+            }
         }
         .m_ybar{
             width: 192px;
@@ -591,21 +592,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
     h2{
         color: #033333 !important;
-        font-family:"Black Han Sans", sans-serif;
-        font-size: 38px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-    
-        strong{
-            color: red;
-        }
-        .d_11{
-            position: relative;
-            top: 7px;
-        }
-        p{
-            width: 194px;
+        span{
+            color: red !important;
         }
     }
     
@@ -659,4 +647,27 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
     }
 
+}
+
+#crContent{
+
+    
+    h2{
+        color: #033333 !important;
+        span{
+            color: red !important;
+        }
+    }
+    .crdiv{
+        width: 1400px;
+        ul{
+            li{
+                border-radius: 30px;
+                width: 335px;
+                height: 550px;
+                background-color: #000;
+                
+            }
+        }
+    }
 }

@@ -13,18 +13,22 @@
 }
 @keyframes move {
   0% {
-    left: -10%;
+    transform: translateX(-109%);
+    opacity: 70%;
   }
   100% {
-    left: 0%;
+    transform: translateX(0%);
+    opacity: 100%;
   }
 }
 @keyframes mover {
   0% {
-    right: -10%;
+    transform: translateX(117%);
+    opacity: 70%;
   }
   100% {
-    right: -1%;
+    transform: translateX(10%);
+    opacity: 100%;
   }
 }
 body {
@@ -268,6 +272,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   width: 882px;
   height: 90px;
   background-image: url(../img/svg/yellow_menu.svg);
+  box-shadow: 0 0px 20px 0 rgba(10, 10, 10, 0.548);
 }
 #mainBanner .mainp .smenu ul {
   padding: 50px;
@@ -290,13 +295,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
 #news_swiper h2 {
   color: #033333 !important;
-  font-family: "Black Han Sans", sans-serif;
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
 }
-#news_swiper h2 strong {
+#news_swiper h2 span {
   color: red;
 }
 #news_swiper h2 .d_11 {
@@ -370,10 +370,15 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   width: 256px;
   height: 256px;
   position: absolute;
+  opacity: 70%;
   top: -4%;
-  right: -1%;
-  z-index: 10000;
+  right: 0;
+  transform: translateX(117%);
+  z-index: 1000;
+}
+#mContent .redB .yBox.action {
   animation: mover 2s;
+  animation-fill-mode: forwards;
 }
 #mContent .redB .mario {
   position: absolute;
@@ -381,9 +386,13 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   width: 518px;
   height: 628px;
   bottom: 0;
+  transform: translateX(-109%);
   top: 5%;
   z-index: 10000;
-  animation: move 2s;
+}
+#mContent .redB .mario.go {
+  animation: move 2.5s;
+  animation-fill-mode: forwards;
 }
 #mContent .redB .m_ybar {
   width: 192px;
@@ -491,21 +500,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
 #soft_Swiper h2 {
   color: #033333 !important;
-  font-family: "Black Han Sans", sans-serif;
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
 }
-#soft_Swiper h2 strong {
-  color: red;
-}
-#soft_Swiper h2 .d_11 {
-  position: relative;
-  top: 7px;
-}
-#soft_Swiper h2 p {
-  width: 194px;
+#soft_Swiper h2 span {
+  color: red !important;
 }
 #soft_Swiper .swiper {
   margin-left: 48px;
@@ -547,4 +544,20 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 #soft_Swiper .button-next {
   left: 28px;
   background-image: url(../img/svg/arrow_left.svg);
+}
+
+#crContent h2 {
+  color: #033333 !important;
+}
+#crContent h2 span {
+  color: red !important;
+}
+#crContent .crdiv {
+  width: 1400px;
+}
+#crContent .crdiv ul li {
+  border-radius: 30px;
+  width: 335px;
+  height: 550px;
+  background-color: #000;
 }
