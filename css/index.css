@@ -13,7 +13,6 @@
 }
 body {
   cursor: url("/img/svg/op_mushroom.svg"), auto;
-  background-color: black;
 }
 
 .d-flex {
@@ -431,6 +430,27 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   width: 1420px;
   height: 525px;
   background: url(../img/svg/mario_Movie_in.svg) no-repeat;
+  transition: 0.3s;
+}
+#mContent .redB .movie .youtube_img:hover {
+  transform: scale(1.1);
+}
+#mContent .redB .movie .youtube_img .play-button {
+  width: 57px; /* 버튼 너비 */
+  height: 62px; /* 버튼 높이 */
+  background-color: #ffffff; /* 버튼 배경색 */
+  border: none; /* 테두리 없음 */
+  cursor: pointer; /* 커서 모양 변경 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 */
+  transition: background-color 0.3s, transform 0.3s; /* 전환 효과 */
+  -webkit-clip-path: polygon(0 0, 0% 0, 100% 50%, 0% 100%, 0 100%) !important;
+          clip-path: polygon(0 0, 0% 0, 100% 50%, 0% 100%, 0 100%) !important; /* 오른쪽으로 뾰족한 모양 */
+  left: 47%;
+  top: 45%;
+}
+#mContent .redB .movie .youtube_img .play-button:hover {
+  background-color: #f0f0f0; /* 마우스 오버 시 배경색 */
+  transform: scale(1.1); /* 마우스 오버 시 확대 */
 }
 
 #soft_Swiper h2 {
