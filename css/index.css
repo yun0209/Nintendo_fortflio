@@ -5,6 +5,72 @@
     max-width: 100%;
   }
 }
+@media (max-width: 1200px) {
+  #hd {
+    max-width: 90%;
+    top: 70px;
+    height: 80px;
+  }
+  #mainBanner .mainp {
+    margin: auto;
+  }
+  #mainBanner img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+@media (max-width: 992px) {
+  #hd {
+    max-width: 80%;
+    top: 60px;
+    height: 75px;
+  }
+  #mainBanner .mainp {
+    margin: auto;
+  }
+  #mainBanner .smenu {
+    display: none !important;
+  }
+  #mainBanner img {
+    border-radius: 0%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0% !important;
+  }
+}
+@media (max-width: 768px) {
+  #hd {
+    max-width: 70%;
+    top: 50px;
+    height: 70px;
+  }
+  #mainBanner .mainp {
+    margin: auto;
+  }
+  #mainBanner img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0%;
+  }
+}
+@media (max-width: 576px) {
+  #hd {
+    max-width: 70%;
+    top: 40px;
+    height: 65px;
+  }
+  #hd .gnb_li a {
+    font-size: 18px;
+  }
+  #mainBanner .mainp {
+    margin: auto;
+  }
+  #mainBanner img {
+    border-radius: 0%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
 @font-face {
   font-family: "Black Han Sans";
   src: url("/path/to/BlackHanSans-Regular.ttf") format("truetype");
@@ -75,11 +141,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 .px-70 {
   padding-right: 70px !important;
   padding-left: 70px !important;
-}
-
-.bg-w {
-  background-color: white;
-  border-radius: 57px;
 }
 
 .gnbT {
@@ -228,13 +289,15 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 
 #hd {
+  overflow: hidden;
   transform: translateX(-50%);
   left: 50%;
-  width: 1728px;
+  width: 1728px !important;
   top: 90px;
   position: absolute;
-  z-index: 1000px;
+  z-index: 1000;
   height: 85px;
+  border-radius: 57px;
 }
 #hd:hover {
   box-shadow: 0 0px 20px 0 rgba(10, 10, 10, 0.548);
@@ -249,21 +312,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   align-items: center;
 }
 #hd .gnb .gnb_li a {
-  display: inline-block;
   color: #474545 !important;
-  font-family: "Black Han Sans", sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
 }
 #hd .gnb .gnb_li a:hover {
   color: red !important;
-}
-#hd #continer {
-  gap: 313px;
-  padding: 16px 60px;
-  width: 100%; /* 컨테이너의 가로 크기를 100%로 설정 */
 }
 #hd .myicon a img {
   transform: scale(0.8);
@@ -275,6 +327,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 #mainBanner .mainp {
   margin: auto;
   left: -50%;
+}
+#mainBanner .mainp p a img {
+  border-radius: 85px;
 }
 #mainBanner .mainp .smenu {
   position: relative;

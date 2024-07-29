@@ -4,6 +4,95 @@
         max-width: 100%;
     }
 }
+
+@media (max-width: 1200px) {
+    #hd {
+        max-width: 90%;
+        top: 70px;
+        height: 80px;
+      
+    }
+    #mainBanner{
+        .mainp{
+            margin: auto;
+        }
+        img{
+            
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    #hd {
+        max-width: 80%;
+        top: 60px;
+        height: 75px;
+       
+    }
+    #mainBanner{
+        .mainp{
+            margin: auto;
+        }
+        .smenu{
+            display: none !important;
+        }
+        img{
+            border-radius: 0%;
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 0% !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #hd {
+        max-width: 70%;
+        top: 50px;
+        height: 70px;
+        
+    }
+    #mainBanner{
+        .mainp{
+            margin: auto;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 0%;
+        }
+    }
+
+    
+}
+
+@media (max-width: 576px) {
+    #hd {
+        max-width: 70%;
+        top: 40px;
+        height: 65px;
+        .gnb_li a{
+            font-size: 18px;
+           }
+    }
+    #mainBanner{
+        .mainp{
+            margin: auto;
+        }
+        img{
+            border-radius: 0%;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+   
+
+   
+}
+
 @font-face {
     font-family: 'Black Han Sans';
     src: url('/path/to/BlackHanSans-Regular.ttf') format('truetype');
@@ -65,10 +154,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     padding-right: 70px !important;
     padding-left: 70px !important;
 }
-.bg-w {
-    background-color: white;
-    border-radius: 57px;
-}
+
 // .w-100{
 //     width: 100%;
 // }
@@ -241,73 +327,52 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     margin-right: 51px !important;
 }
 #hd {
+    overflow: hidden;
     transform: translateX(-50%);
-    left:50%;
-    width: 1728px;
+    left: 50%;
+    width: 1728px !important;
     top: 90px;
     position: absolute;
-    z-index: 1000px;
+    z-index: 1000;
     height: 85px;
+    border-radius: 57px;
 
     &:hover {
         box-shadow: 0 0px 20px 0 rgba(10, 10, 10, 0.548);
     }
-    .trx{
+    
+    .trx {
         position: absolute;
         transform: translateY(-50%);
         top: 50%;
 
-        h1{
-            a{
-                img{
+        h1 {
+            a {
+                img {
                     display: flex;
                     align-items: center;
-    
                 }
             }
-            
-            
         }
-
     }
-    
 
     .gnb {
-        // gap: 100px;
-
         .gnb_li a {
-            display: inline-block;
             color: #474545 !important;
-            font-family: 'Black Han Sans', sans-serif;
-            font-size: 22px;  //폰트 깨짐으로 인한 사이즈 수정.
-            font-style: normal;
-            font-weight: 300; //모든 폰트 weight 300으로 수정.
-            line-height: normal;
-            &:hover{
+
+            &:hover {
                 color: red !important;
             }
         }
-
     }
-   
 
-    #continer {
-        gap: 313px;
-        padding: 16px 60px;
-        width: 100%; /* 컨테이너의 가로 크기를 100%로 설정 */
-        
-        
-    }
-    .myicon{
-        a{
-            img{
+    .myicon {
+        a {
+            img {
                 transform: scale(0.8);
-
             }
-           
         }
     }
-    
 }
 
 #mainBanner{
@@ -315,6 +380,13 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     .mainp{
         margin: auto;
         left: calc(-50%);
+        p{
+            a{
+                img{
+                    border-radius: 85px;
+                }
+            }
+        }
     
         .smenu{
             position: relative;
