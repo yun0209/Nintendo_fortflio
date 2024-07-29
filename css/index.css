@@ -104,6 +104,13 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   letter-spacing: -0.68px;
 }
 
+.sb_menuT {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .inT {
   font-size: 14px;
   font-style: normal;
@@ -221,20 +228,23 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 
 #hd {
+  transform: translateX(-50%);
+  left: 50%;
   width: 1728px;
   top: 90px;
   position: absolute;
   z-index: 1000px;
   height: 85px;
-  margin: 0 96px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #hd:hover {
   box-shadow: 0 0px 20px 0 rgba(10, 10, 10, 0.548);
 }
-#hd h1 a img {
+#hd .trx {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+#hd .trx h1 a img {
   display: flex;
   align-items: center;
 }
@@ -268,28 +278,26 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 #mainBanner .mainp .smenu {
   position: relative;
+  display: grid;
   top: -46px;
-  width: 882px;
-  height: 90px;
-  background-image: url(../img/svg/yellow_menu.svg);
-  box-shadow: 0 0px 20px 0 rgba(10, 10, 10, 0.548);
+  height: 113px;
+  background-image: url(../img/png/submenu_bar.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
 }
 #mainBanner .mainp .smenu ul {
-  padding: 50px;
+  width: 757px;
+  margin: 0 65px !important;
+  transform: translateY(-5px) translateX(62%);
 }
 #mainBanner .mainp .smenu ul li {
   text-wrap: nowrap;
 }
-#mainBanner .mainp .smenu .sb_menuT {
+#mainBanner .mainp .smenu ul li a {
   color: #EC6907 !important;
-  font-family: "Black Han Sans", sans-serif;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  left: 60px;
 }
-#mainBanner .mainp .smenu .sb_menuT:hover {
+#mainBanner .mainp .smenu ul li a:hover {
   color: #924408 !important;
 }
 
