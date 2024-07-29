@@ -57,12 +57,12 @@
                         <img src="./img/png/mario_main.jpg" alt="">
                     </a>
                 </p>
-                <div class="smenu col  ">
-                    <ul class="sb_menuT fontBase d-flex aic mx-5 justify-content-between">
-                        <li><a href="">로그인</a></li>
-                        <li><a href="">캐릭터</a></li>
-                        <li><a href="">굿즈</a></li>
-                        <li><a href="">온라인e숍</a></li>
+                <div class="smenu ">
+                    <ul class="col-12 sb_menuT me-auto ms-auto img-fluid fontBase d-flex aic  justify-content-center">
+                        <li class="col-3 text-center"><a href="">로그인</a></li>
+                        <li class="col-3 text-center"><a href="">캐릭터</a></li>
+                        <li class="col-3 text-center"><a href="">굿즈</a></li>
+                        <li class="col-3 text-center"><a href="">온라인e숍</a></li>
                     </ul>
                 </div>
                     
@@ -95,7 +95,7 @@
                             <div class="news_img1  rounded-30 ">
                                 <p class="ct_Blank">
                                     <a href="">
-                                        <img src="./img/png/prinssaspich .png" alt="">
+                                        <img src="./img/png/prinssaspich .png" class="img-fluid" alt="">
                                     </a>
                                 </p>
                                 <p class="leadcopy fontNoto col-9 ms-4  ">
@@ -111,7 +111,7 @@
                             <div class="news_img1  rounded-30 ">
                                 <p class="ct_Blank">
                                     <a href="">
-                                        <img src="./img/png/prinssaspich .png" alt="">
+                                        <img src="./img/png/prinssaspich .png" class="img-fluid" alt="">
                                     </a>
                                 </p>
                                 <p class="leadcopy fontNoto col-9 ms-4  ">
@@ -127,7 +127,7 @@
                             <div class="news_img1  rounded-30 ">
                                 <p class="ct_Blank">
                                     <a href="">
-                                        <img src="./img/png/prinssaspich .png" alt="">
+                                        <img src="./img/png/prinssaspich .png" class="img-fluid" alt="">
                                     </a>
                                 </p>
                                 <p class="leadcopy fontNoto col-9 ms-4  ">
@@ -143,7 +143,7 @@
                             <div class="news_img1  rounded-30 ">
                                 <p class="ct_Blank">
                                     <a href="">
-                                        <img src="./img/png/prinssaspich .png" alt="">
+                                        <img src="./img/png/prinssaspich .png" class="img-fluid" alt="">
                                     </a>
                                 </p>
                                 <p class="leadcopy fontNoto col-9 ms-4  ">
@@ -159,7 +159,7 @@
                             <div class="news_img1  rounded-30 ">
                                 <p class="ct_Blank">
                                     <a href="">
-                                        <img src="./img/png/prinssaspich .png" alt="">
+                                        <img src="./img/png/prinssaspich .png" class="img-fluid" alt="">
                                     </a>
                                 </p>
                                 <p class="leadcopy fontNoto col-9 ms-4  ">
@@ -493,8 +493,35 @@
             prevEl: ".button-next",
             
           },
-          
-          
+          breakpoints: {
+            500:{
+                slidesPerView:1,
+                spaceBetween:20,
+            },
+
+            600:{
+                slidesPerView:1,
+                spaceBetween:20,
+            },
+            800: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            900: {
+                slidesPerView: 2,
+                spaceBetween: 60,
+            },
+            1500:{
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1800: {
+                slidesPerView: 3.6,
+                spaceBetween: 20,
+            }
+
+            }
+           
         });
 
         const swiperM = new Swiper(".marioSwiper", {
@@ -507,6 +534,8 @@
             prevEl: ".button-next",
             
         },
+        
+       
         
         
         });
@@ -521,6 +550,35 @@
             prevEl: ".button-next",
             
           },
+          breakpoints: {
+            500:{
+                slidesPerView:1,
+                spaceBetween:40,
+            },
+
+            600:{
+                slidesPerView:1,
+                spaceBetween:20,
+            },
+            800: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            900: {
+                slidesPerView: 2,
+                spaceBetween: 60,
+            },
+            1500:{
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1800: {
+                slidesPerView: 3.6,
+                spaceBetween: 20,
+            }
+
+            }
+         
           
           
         });
