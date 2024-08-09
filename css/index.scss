@@ -742,13 +742,51 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         }
     }
     .crdiv{
-        width: 1400px;
+        max-width: 1400px;
         ul{
             li{
+            
                 border-radius: 30px;
                 width: 335px;
                 height: 550px;
-                background-color: #000;
+                background: url(../img/png/cr_img_j.png)no-repeat;
+                background-size: 50vh;
+                background-position: top;
+                background-color: #EFEFEF;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
+                    
+                        
+    
+                
+            }
+            .cr_box{
+                        width: 305px;
+                        height: 250px;
+                        border-radius: 10%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 250px;
+                        padding: 30px 0 40px 0;
+                        p{
+                            
+                            span{
+                                display: inline-block;
+                                color: #fff;
+                                width: 90px;
+                                height: 30px;
+                                background: url(../img/svg/cr_button.svg);
+                                
+                            }
+                        }
+                        h3{
+                            color: #033333;
+                        }
+                
+
+                
                 
             }
         }
