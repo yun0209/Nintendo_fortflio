@@ -644,3 +644,28 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 #crContent .crdiv ul .cr_box h3 {
   color: #033333;
 }
+
+#footer {
+  background-color: #F00;
+}
+#footer .f_help {
+  border-bottom: 1px solid #fff;
+}
+#footer .f_help ul {
+  max-width: 1400px;
+  margin: 0 auto !important;
+}
+#footer .f_help ul li {
+  border: 1px solid #FF9595;
+  padding-left: 50px !important;
+  padding-top: 20px !important;
+  min-width: 352px;
+  min-height: 250px;
+}
+#footer .f_help ul li p {
+  color: white;
+}
+#footer .f_help ul li a {
+  margin-bottom: 0.75rem;
+  color: white;
+}/*# sourceMappingURL=index.css.map */

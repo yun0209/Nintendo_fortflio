@@ -792,3 +792,35 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         }
     }
 }
+
+#footer{
+    background-color: #F00;
+    .f_help{
+        border-bottom: 1px solid #fff;
+        ul{
+            
+            max-width: 1400px;
+            margin: 0 auto !important;
+            li{
+                border: 1px solid #FF9595;
+                padding-left: 50px !important;
+                padding-top: 20px !important;
+                min-width: 352px;
+                min-height: 250px;
+                p{
+                    color: white;
+
+                }
+                a{
+                    margin-bottom: 0.75rem;
+                    color: white;
+                }
+            }
+        }
+
+    }
+    .f_about{
+    
+    }
+    
+}
