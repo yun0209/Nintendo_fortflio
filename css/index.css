@@ -603,6 +603,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   background-image: url(../img/svg/arrow_left.svg);
 }
 
+#crContent {
+  overflow: hidden;
+}
 #crContent h2 {
   color: #033333 !important;
 }
@@ -646,6 +649,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 
 #footer {
+  overflow: hidden;
   background-color: #F00;
 }
 #footer .f_help {

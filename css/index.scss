@@ -734,7 +734,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
 #crContent{
 
-    
+    overflow: hidden;
     h2{
         color: #033333 !important;
         span{
@@ -794,6 +794,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 
 #footer{
+    overflow: hidden;
     background-color: #F00;
     .f_help{
         border-bottom: 1px solid #fff;
