@@ -668,4 +668,20 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 #footer .f_help ul li a {
   margin-bottom: 0.75rem;
   color: white;
-}/*# sourceMappingURL=index.css.map */
+}
+#footer .f_about {
+  max-width: 1400px;
+  padding: 50px;
+}
+#footer .f_about .icons .sns_icon {
+  width: 173px !important;
+}
+#footer .df {
+  color: #fff;
+}
+#footer .df a {
+  color: #fff;
+}
+#footer .df p {
+  margin-bottom: 0.5rem !important;
+}

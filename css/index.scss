@@ -820,7 +820,32 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
     }
     .f_about{
+        max-width: 1400px;
+        padding: 50px;
+        
+        .icons{
+            h3{
     
+            }
+                        
+            .sns_icon{
+                width: 173px !important;
+                li{
+                    a{
+                    
+                    }
+                } 
+            } 
+        }
+    }
+    .df{
+        color: #fff;
+        a{
+            color: #fff;
+        }
+        p{
+            margin-bottom: 0.5rem !important;
+        }
     }
     
 }
