@@ -1,70 +1,4 @@
 @charset "UTF-8";
-@media (max-width: 1200px) {
-  #hd {
-    max-width: 90%;
-    top: 70px;
-    height: 80px;
-  }
-  #mainBanner .mainp {
-    margin: auto;
-  }
-  #mainBanner img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-}
-@media (max-width: 992px) {
-  #hd {
-    max-width: 80%;
-    top: 60px;
-    height: 75px;
-  }
-  #mainBanner .mainp {
-    margin: auto;
-  }
-  #mainBanner .smenu {
-    display: none !important;
-  }
-  #mainBanner img {
-    border-radius: 0%;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 0% !important;
-  }
-}
-@media (max-width: 768px) {
-  #hd {
-    max-width: 70%;
-    top: 50px;
-    height: 70px;
-  }
-  #mainBanner .mainp {
-    margin: auto;
-  }
-  #mainBanner img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 0%;
-  }
-}
-@media (max-width: 576px) {
-  #hd {
-    max-width: 70%;
-    top: 40px;
-    height: 65px;
-  }
-  #hd .gnb_li a {
-    font-size: 18px;
-  }
-  #mainBanner .mainp {
-    margin: auto;
-  }
-  #mainBanner img {
-    border-radius: 0%;
-    max-width: 100%;
-    max-height: 100%;
-  }
-}
 @font-face {
   font-family: "Black Han Sans";
   src: url("/path/to/BlackHanSans-Regular.ttf") format("truetype");
@@ -129,7 +63,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 
 .py-60 {
-  padding: 0 45px;
+  padding: 0 5vw;
 }
 
 .px-70 {
@@ -283,27 +217,38 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 
 #hd {
-  overflow: hidden;
-  transform: translateX(-50%);
-  left: 50%;
-  width: 1728px !important;
-  top: 90px;
-  position: absolute;
-  z-index: 1000;
-  height: 85px;
-  border-radius: 57px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
-#hd:hover {
-  box-shadow: 0 0px 20px 0 rgba(10, 10, 10, 0.548);
+@media (min-width: 1400px) {
+  #hd {
+    overflow: hidden;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 1728px !important;
+    top: 90px;
+    position: absolute;
+    z-index: 1000;
+    height: 85px;
+    border-radius: 57px;
+  }
+  #hd:hover {
+    box-shadow: 0 0px 20px 0 rgba(10, 10, 10, 0.548);
+  }
+  #hd .trx {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+  }
 }
 #hd .trx {
-  position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
+  height: 70px;
+  padding: 0 5vw;
 }
-#hd .trx h1 a img {
-  display: flex;
-  align-items: center;
+#hd h1 a img {
+  display: block;
+  max-width: 40vw;
 }
 #hd .gnb .gnb_li a {
   color: #474545 !important;
@@ -319,16 +264,23 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   justify-content: space-between;
 }
 #mainBanner .mainp {
-  margin: auto;
-  left: -50%;
+  margin-top: 70px;
 }
 #mainBanner .mainp p a img {
-  border-radius: 85px;
+  border-radius: unset;
+  max-width: 100%;
+}
+@media (max-width: 770px) {
+  #mainBanner .mainp p a .main_B img {
+    border-radius: unset;
+    max-width: 100%;
+  }
 }
 #mainBanner .mainp .smenu {
-  position: relative;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  position: absolute;
   display: grid;
-  top: -46px;
   height: 113px;
   background-image: url(../img/png/submenu_bar.png);
   background-repeat: no-repeat;
@@ -348,6 +300,12 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 #mainBanner .mainp .smenu ul li a:hover {
   color: #924408 !important;
+}
+@media (min-width: 1400px) {
+  #mainBanner .mainp p a img {
+    border-radius: 84px;
+    max-width: 100%;
+  }
 }
 
 #news_swiper h2 {
@@ -431,7 +389,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   top: -4%;
   right: 0;
   transform: translateX(117%);
-  z-index: 1000;
+  z-index: 10;
 }
 #mContent .redB .yBox.action {
   animation: mover 2s;
@@ -445,7 +403,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   bottom: 0;
   transform: translateX(-109%);
   top: 5%;
-  z-index: 10000;
+  z-index: 1;
 }
 #mContent .redB .mario.go {
   animation: move 2.5s;
@@ -515,7 +473,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 #mContent .redB .movie {
   position: absolute;
-  z-index: 1000;
+  z-index: 10;
   top: 54%;
 }
 #mContent .redB .movie .mMovie {
