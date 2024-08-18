@@ -188,6 +188,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   font-weight: 400;
   line-height: normal;
 }
+@media (max-width: 770px) {
+  .m_Menu26 {
+    font-size: 15px;
+  }
+}
 
 .m_Movie {
   font-size: 22px;
@@ -462,9 +467,20 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   width: 1824px;
   height: 2235px;
 }
+@media (max-width: 1400px) {
+  #mContent .redB {
+    max-width: 100%;
+  }
+}
 #mContent .redB p {
   padding-bottom: 1rem;
   color: #fff;
+}
+@media (max-width: 770px) {
+  #mContent .redB p {
+    flex-direction: column;
+    display: flex;
+  }
 }
 #mContent .redB .yBox {
   background: url(../img/svg/ybox.svg);
@@ -481,6 +497,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   animation: mover 2s;
   animation-fill-mode: forwards;
 }
+@media (max-width: 1400px) {
+  #mContent .redB .yBox {
+    display: none;
+  }
+}
 #mContent .redB .mario {
   position: absolute;
   background: url(../img/png/mario.png) no-repeat;
@@ -495,6 +516,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   animation: move 2.5s;
   animation-fill-mode: forwards;
 }
+@media (max-width: 1400px) {
+  #mContent .redB .mario {
+    display: none;
+  }
+}
 #mContent .redB .m_ybar {
   width: 192px;
   height: 72px;
@@ -504,9 +530,15 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   text-wrap: nowrap;
   color: #EC6907;
 }
-#mContent .redB .m_ybar p img {
-  width: 184px !important;
-  height: 72px !important;
+#mContent .redB .m_ybar img {
+  width: 184px;
+  height: 72px;
+}
+@media (max-width: 770px) {
+  #mContent .redB .m_ybar img {
+    height: 50px;
+    width: 125px;
+  }
 }
 #mContent .redB .rZone {
   background: url(../img/svg/r_zone.svg) no-repeat;
@@ -516,6 +548,14 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   height: 528px;
   left: -48px;
   top: 27.2%;
+}
+@media (max-width: 1400px) {
+  #mContent .redB .rZone {
+    background: none;
+    width: 320px;
+    left: 0;
+    height: 235px;
+  }
 }
 #mContent .redB .rZone .marioSwiper {
   top: 50%;
@@ -532,6 +572,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   align-items: center;
 }
 #mContent .redB .rZone .marioSwiper .swiper-slide p {
+  flex-direction: column;
+  display: flex;
   color: #fff;
 }
 #mContent .redB .rZone .marioSwiper .swiper-slide p a img {
@@ -539,23 +581,30 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   height: 300px;
   border-radius: 15px;
 }
+@media (max-width: 770px) {
+  #mContent .redB .rZone .marioSwiper .swiper-slide p a img {
+    width: 320px;
+    height: 190px;
+  }
+}
 #mContent .redB .rZone .marioSwiper .swiper-wrapper {
   margin: 0 0 auto auto;
   width: 1400px;
   height: auto;
 }
-#mContent .redB .rZone .button-next {
+#mContent .redB .rZone .button-next,
+#mContent .redB .rZone .button-prev {
   position: absolute;
   left: 9%;
   top: 35%;
   z-index: 1000;
   transform: rotate(-180deg);
 }
-#mContent .redB .rZone .button-prev {
-  position: absolute;
-  right: 9%;
-  top: 35%;
-  z-index: 1000;
+@media (max-width: 770px) {
+  #mContent .redB .rZone .button-next,
+  #mContent .redB .rZone .button-prev {
+    display: none;
+  }
 }
 #mContent .redB .movie {
   position: absolute;

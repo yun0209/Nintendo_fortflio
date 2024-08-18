@@ -195,6 +195,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    @media (max-width:770px) {
+        font-size: 15px;
+    }
 }
 //마리오 무비 타이틀 텍스트
 .m_Movie{
@@ -522,10 +525,19 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         border-radius: 20px;
         width: 1824px;
         height: 2235px;
+        @media (max-width:1400px){
+            max-width: 100%;
+            
+        }
         
         p{
             padding-bottom: 1rem;
             color: #fff;
+            @media (max-width:770px) {
+                flex-direction: column;
+                display: flex;
+
+            }
         }
         .yBox{
             background: url(../img/svg/ybox.svg);
@@ -542,6 +554,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
             animation-fill-mode: forwards;
             
             }
+            @media (max-width:1400px){
+                display: none;
+            }
         }
       
         .mario{
@@ -557,6 +572,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                 animation: move 2.5s;
                 animation-fill-mode: forwards;
             }
+            @media (max-width:1400px){
+                display: none;
+            }
         }
         .m_ybar{
             width: 192px;
@@ -565,10 +583,17 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                 position: absolute;
                 text-wrap: nowrap;
                 color: #EC6907;
-                img{
-                    width: 184px !important;
-                    height: 72px !important;
+                
+            }
+            img{
+                
+                width: 184px ;
+                height: 72px ;
+                @media (max-width:770px) {
+                    height: 50px;
+                    width: 125px;
                 }
+                
             }
 
         }
@@ -582,6 +607,13 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
             height: 528px;
             left: calc(-48px);
             top: calc(27.2%);
+            @media (max-width:1400px){
+                background: none;
+                width: 320px;
+                left: 0;
+                height: 235px;
+                
+            }
             
             .marioSwiper{
                 top: calc(50%);
@@ -597,12 +629,20 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                     justify-content: center;
                     align-items: center;
                     p{
+                        flex-direction: column;
+                        display: flex;
                         color: #fff;
+                    
+                        
                         a{
                             img{
                                 width: 450px;
                                 height: 300px;
                                 border-radius: 15px;
+                                @media (max-width:770px) {
+                                    width: 320px;
+                                    height: 190px;
+                                }
                             }
                         }
 
@@ -617,22 +657,19 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                 
             }
 
-            .button-next{
+            .button-next,
+            .button-prev{
                 position: absolute;
                 left: calc(9%);
                 top: calc(35%);
                 z-index: 1000;
                 transform: rotate(-180deg);
 
-                
+                @media (max-width:770px) {
+                    display: none;
+                }
             }
-            .button-prev{
-                position: absolute;
-                right: calc(9%);
-                top: calc(35%);
-                z-index: 1000;
-                
-            }
+           
         }
         .movie{
             position: absolute;
