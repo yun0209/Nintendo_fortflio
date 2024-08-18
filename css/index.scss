@@ -88,6 +88,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    @media (max-width:1400px) {
+        font-size: 25px;
+    }
+
 }
 
 //리드카피
@@ -97,6 +101,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     font-weight: 800;
     line-height: normal;
     letter-spacing: -0.68px;
+    @media (max-width:1400px) {
+        font-size: 12px;
+        letter-spacing: -0.48px;
+    }
 }
 //서브메뉴
 .sb_menuT{      
@@ -214,10 +222,16 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 // 각 컨텐츠의 간격
 .cententB{
     margin-bottom: 170px;
+    @media (max-width:770px) {
+        margin-bottom : 100px !important;
+    }
 }
 //타이틀과 컨텐츠의 간격
 .ti_Blank{
     margin-bottom : 70px !important;
+    @media (max-width:770px) {
+        margin-bottom : 35px !important;
+    }
 }
 .ti_BlankTop{
     padding-top: 70px;
@@ -395,9 +409,14 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     }
     
     .swiper {
-        margin-left: 48px;
+        margin-left: unset;
         overflow: hidden;
         position: relative;
+        @media (min-width:770px) {
+        margin-left: 48px;
+        
+            
+        }
     }
     .swiper-slide {
         display: flex;
@@ -406,6 +425,12 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         p{
             text-wrap: nowrap;
             color: #3e3e3e;
+            @media (min-width:770px) {
+                text-wrap: nowrap;
+                
+                    
+            }
+            
         }
     }
     .news_img1 img {
@@ -422,24 +447,41 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     }
     .button-next,
     .button-prev{
-        top: 0;
         bottom: 0;
-        position: absolute;
-        z-index: 100 !important;
-        width: 48px;
-        height: 48px;
-        top: calc(50% - 50px);
+            position: absolute;
+            z-index: 100 !important;
+            width: 48px;
+            height: 48px;
+            top: calc(43% - 50px);
+        
+        @media (min-width:1400px) {
+            top: 0;
+            bottom: 0;
+            width: 48px;
+            height: 48px;
+            top: calc(50% - 50px);
+        }
         
     }
     .button-prev{
         right: 28px;
-        background-image: url(../img/svg/arrow_right.svg);
+        background: url(../img/png/next.png) no-repeat;
+        opacity: 80%;
+        @media (max-width:1400px) {
+            background: unset;
+            right: 0;
+        }
 
     }
     .button-next{
             
         left: 28px;
-        background-image: url(../img/svg/arrow_left.svg);
+        background: url(../img/png/prev.png)no-repeat;
+        opacity: 80%;
+        @media (max-width:1400px) {
+            background: unset;
+            left: 0;
+        }
 
     }
 

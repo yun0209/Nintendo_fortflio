@@ -84,6 +84,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   font-weight: 400;
   line-height: normal;
 }
+@media (max-width: 1400px) {
+  .titleT {
+    font-size: 25px;
+  }
+}
 
 .leadcopy {
   font-size: 18px;
@@ -91,6 +96,12 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   font-weight: 800;
   line-height: normal;
   letter-spacing: -0.68px;
+}
+@media (max-width: 1400px) {
+  .leadcopy {
+    font-size: 12px;
+    letter-spacing: -0.48px;
+  }
 }
 
 .sb_menuT {
@@ -195,9 +206,19 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 .cententB {
   margin-bottom: 170px;
 }
+@media (max-width: 770px) {
+  .cententB {
+    margin-bottom: 100px !important;
+  }
+}
 
 .ti_Blank {
   margin-bottom: 70px !important;
+}
+@media (max-width: 770px) {
+  .ti_Blank {
+    margin-bottom: 35px !important;
+  }
 }
 
 .ti_BlankTop {
@@ -322,9 +343,14 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   width: 194px;
 }
 #news_swiper .swiper {
-  margin-left: 48px;
+  margin-left: unset;
   overflow: hidden;
   position: relative;
+}
+@media (min-width: 770px) {
+  #news_swiper .swiper {
+    margin-left: 48px;
+  }
 }
 #news_swiper .swiper-slide {
   display: flex;
@@ -334,6 +360,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 #news_swiper .swiper-slide p {
   text-wrap: nowrap;
   color: #3e3e3e;
+}
+@media (min-width: 770px) {
+  #news_swiper .swiper-slide p {
+    text-wrap: nowrap;
+  }
 }
 #news_swiper .news_img1 img {
   width: 499px;
@@ -346,21 +377,44 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 #news_swiper .button-next,
 #news_swiper .button-prev {
-  top: 0;
   bottom: 0;
   position: absolute;
   z-index: 100 !important;
   width: 48px;
   height: 48px;
-  top: calc(50% - 50px);
+  top: calc(43% - 50px);
+}
+@media (min-width: 1400px) {
+  #news_swiper .button-next,
+  #news_swiper .button-prev {
+    top: 0;
+    bottom: 0;
+    width: 48px;
+    height: 48px;
+    top: calc(50% - 50px);
+  }
 }
 #news_swiper .button-prev {
   right: 28px;
-  background-image: url(../img/svg/arrow_right.svg);
+  background: url(../img/png/next.png) no-repeat;
+  opacity: 80%;
+}
+@media (max-width: 1400px) {
+  #news_swiper .button-prev {
+    background: unset;
+    right: 0;
+  }
 }
 #news_swiper .button-next {
   left: 28px;
-  background-image: url(../img/svg/arrow_left.svg);
+  background: url(../img/png/prev.png) no-repeat;
+  opacity: 80%;
+}
+@media (max-width: 1400px) {
+  #news_swiper .button-next {
+    background: unset;
+    left: 0;
+  }
 }
 
 #mContent {
