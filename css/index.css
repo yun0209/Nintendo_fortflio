@@ -551,10 +551,13 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 @media (max-width: 1400px) {
   #mContent .redB .rZone {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    max-height: 400px;
     background: none;
-    width: 320px;
-    left: 0;
-    height: 235px;
+    top: unset;
+    left: unset;
   }
 }
 #mContent .redB .rZone .marioSwiper {
@@ -583,14 +586,19 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 @media (max-width: 770px) {
   #mContent .redB .rZone .marioSwiper .swiper-slide p a img {
-    width: 320px;
-    height: 190px;
+    width: 300px;
+    height: 170px;
   }
 }
 #mContent .redB .rZone .marioSwiper .swiper-wrapper {
   margin: 0 0 auto auto;
   width: 1400px;
   height: auto;
+}
+@media (max-width: 770px) {
+  #mContent .redB .rZone .marioSwiper .swiper-wrapper {
+    max-width: 900px;
+  }
 }
 #mContent .redB .rZone .button-next,
 #mContent .redB .rZone .button-prev {
@@ -621,15 +629,27 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   border-radius: 20%;
 }
 #mContent .redB .movie .youtube_img {
-  width: 1420px;
-  height: 525px;
-  background: url(../img/svg/mario_Movie_in.svg) no-repeat;
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 25px 31px 4px rgba(117, 9, 9, 0.61);
+  background-position: center;
   transition: 0.3s;
+}
+@media (max-width: 770px) {
+  #mContent .redB .movie .youtube_img {
+    background: url(../img/png/mario_movieM.png);
+  }
 }
 #mContent .redB .movie .youtube_img:hover {
   transform: scale(1.1);
 }
-#mContent .redB .movie .youtube_img .play-button {
+@media (max-width: 770px) {
+  #mContent .redB .movie {
+    top: 44%;
+  }
+}
+#mContent .redB .movie .play-button {
   width: 57px; /* 버튼 너비 */
   height: 62px; /* 버튼 높이 */
   background-color: #ffffff; /* 버튼 배경색 */
@@ -643,7 +663,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   left: 47%;
   top: 45%;
 }
-#mContent .redB .movie .youtube_img .play-button:hover {
+#mContent .redB .movie .play-button:hover {
   background-color: #e00303; /* 마우스 오버 시 배경색 */
   transform: scale(1.1); /* 마우스 오버 시 확대 */
 }

@@ -608,11 +608,15 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
             left: calc(-48px);
             top: calc(27.2%);
             @media (max-width:1400px){
-                background: none;
-                width: 320px;
-                left: 0;
-                height: 235px;
                 
+                overflow: hidden;
+                position: absolute;
+                width: 100%;
+                max-height: 400px;
+                background: none;
+                top: unset;
+                left: unset;
+
             }
             
             .marioSwiper{
@@ -640,8 +644,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                                 height: 300px;
                                 border-radius: 15px;
                                 @media (max-width:770px) {
-                                    width: 320px;
-                                    height: 190px;
+                                    width: 300px;
+                                    height: 170px;
                                 }
                             }
                         }
@@ -653,6 +657,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                         margin: 0 0 auto auto;
                         width: 1400px;
                         height: auto;
+                        @media (max-width:770px) {
+                            max-width: 900px;
+                        }
                 }
                 
             }
@@ -679,38 +686,51 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                 width: 547px;
                 height: 144px;
                 background: url(../img/svg/mario_Movie.svg)no-repeat;
+                @media (max-width:770px) {
+                    
+                }
     
             }
             iframe{
                 display: none;
                 border-radius: 20%;
             }
-            .youtube_img{
-                width: 1420px;
-                height: 525px;
-                background: url(../img/svg/mario_Movie_in.svg )no-repeat;
-                transition:0.3s ;
-                &:hover{
-                    transform: scale(1.1);
-                }
-                .play-button {
-                    width: 57px; /* 버튼 너비 */
-                    height: 62px; /* 버튼 높이 */
-                    background-color: #ffffff; /* 버튼 배경색 */
-                    border: none; /* 테두리 없음 */
-                    cursor: pointer; /* 커서 모양 변경 */
-                    box-shadow: 0 4px 15px rgba(10, 10, 10, 0.438); /* 그림자 */
-                    transition: background-color 0.3s, transform 0.3s; /* 전환 효과 */
-                    clip-path: polygon(0 0, 100% 50%, 0 100%); /* 오른쪽으로 뾰족한 모양 */
-                    position: absolute; /* 위치 설정 */
-                    left: 47%;
-                    top: 45%;
-                }
+            // .youtube_img{
+            //     max-width:100%;
+            //     height: auto;
+            //     background: url(../img/png/mario_movie.png);
+            //     border-radius: 30px;
+            //     box-shadow:25px 31px 4px rgba(117, 9, 9, 0.61);
+            //     background-position: center;
+            //     transition:0.3s ;
+            //     @media (max-width:770px) {
+            //         background: url(../img/png/mario_movieM.png);
+            //     }
+            //     &:hover{
+            //         transform: scale(1.1);
+            //     }
                 
-                .play-button:hover {
-                    background-color: #e00303; /* 마우스 오버 시 배경색 */
-                    transform: scale(1.1); /* 마우스 오버 시 확대 */
-                }
+            // }
+            @media (max-width:770px) {
+                top: 44%;
+            }
+            .play-button {
+                width: 57px; /* 버튼 너비 */
+                height: 62px; /* 버튼 높이 */
+                background-color: #ffffff; /* 버튼 배경색 */
+                border: none; /* 테두리 없음 */
+                cursor: pointer; /* 커서 모양 변경 */
+                box-shadow: 0 4px 15px rgba(10, 10, 10, 0.438); /* 그림자 */
+                transition: background-color 0.3s, transform 0.3s; /* 전환 효과 */
+                clip-path: polygon(0 0, 100% 50%, 0 100%); /* 오른쪽으로 뾰족한 모양 */
+                position: absolute; /* 위치 설정 */
+                left: 47%;
+                top: 45%;
+            }
+            
+            .play-button:hover {
+                background-color: #e00303; /* 마우스 오버 시 배경색 */
+                transform: scale(1.1); /* 마우스 오버 시 확대 */
             }
 
         }
