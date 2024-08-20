@@ -527,7 +527,15 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         height: 2235px;
         @media (max-width:1400px){
             max-width: 100%;
+        }
+        @media (max-width:770px){
+            max-width: 100%;
+            height: 81vh;
             
+
+        }
+        @media (max-width:500px) {
+            height: 69vh;
         }
         
         p{
@@ -667,27 +675,39 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
             .button-next,
             .button-prev{
                 position: absolute;
-                left: calc(9%);
-                top: calc(35%);
                 z-index: 1000;
-                transform: rotate(-180deg);
+                right: 8%;
+                background: url(../img/svg/nextButton.svg)no-repeat;
+                width: 53px;
+                height: 102px;
 
-                @media (max-width:770px) {
+                @media (max-width:1400px) {
                     display: none;
                 }
+            }
+            .button-next{
+                left: 8% !important;
+                transform: rotate(-180deg);
             }
            
         }
         .movie{
             position: absolute;
             z-index: 10;
-            top: calc(54%);
+            bottom: 10%;
+            @media (max-width:770px) {
+                bottom: 5%;
+            }
             .mMovie{
                 width: 547px;
                 height: 144px;
-                background: url(../img/svg/mario_Movie.svg)no-repeat;
+                background: url(../img/png/mario_Movieft.png)no-repeat;
                 @media (max-width:770px) {
-                    
+                    height: 24vw;
+                    background-size: cover;
+                    background-position: center;
+                    width: 80%;
+                    max-width: 100%;
                 }
     
             }
@@ -695,24 +715,46 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                 display: none;
                 border-radius: 20%;
             }
-            // .youtube_img{
-            //     max-width:100%;
-            //     height: auto;
-            //     background: url(../img/png/mario_movie.png);
-            //     border-radius: 30px;
-            //     box-shadow:25px 31px 4px rgba(117, 9, 9, 0.61);
-            //     background-position: center;
-            //     transition:0.3s ;
-            //     @media (max-width:770px) {
-            //         background: url(../img/png/mario_movieM.png);
-            //     }
-            //     &:hover{
-            //         transform: scale(1.1);
-            //     }
-                
-            // }
+            .youtube_img {
+                position: relative;
+                width: 1400px;
+                height: 500px;
+                max-width: 100%;
+                background: url(../img/png/mario_movie.png) no-repeat;
+                background-size: cover;
+                border-radius: 30px;
+                box-shadow: 25px 31px 4px rgba(117, 9, 9, 0.61);
+                background-position: center;
+                transition: 0.3s;
+            
+                @media (max-width: 770px) {
+                    width: 100%; /* 너비를 100%로 설정 */
+                    height: 300px;
+                    padding-top: 56.25%; /* 16:9 비율 유지 (높이 비율을 맞추기 위해 사용) */
+                    background: url(../img/png/mario_movieM.png) no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+            
+                &:hover {
+                    transform: scale(1.1);
+                }
+                p{
+                    img{
+                        left: 10%;
+                        transform: translateY(-50%);
+                        top: 50%;
+                        position: absolute;
+                        @media (max-width:1400px) {
+                            transform: translateY(-50%);
+                            width: 37vw;
+                        }
+                    }
+                    
+                }
+            }
             @media (max-width:770px) {
-                top: 44%;
+                
             }
             .play-button {
                 width: 57px; /* 버튼 너비 */
@@ -726,12 +768,17 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                 position: absolute; /* 위치 설정 */
                 left: 47%;
                 top: 45%;
+                &:hover {
+                    background-color: #e00303; /* 마우스 오버 시 배경색 */
+                    transform: scale(1.1); /* 마우스 오버 시 확대 */
+                }
+                @media (max-width:770px) {
+                    max-width: 34px;
+                    height:37px
+                }
             }
             
-            .play-button:hover {
-                background-color: #e00303; /* 마우스 오버 시 배경색 */
-                transform: scale(1.1); /* 마우스 오버 시 확대 */
-            }
+            
 
         }
         
