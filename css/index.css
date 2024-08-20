@@ -858,8 +858,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   display: flex;
   flex-direction: column;
   height: 60px;
-  width: 30%;
+  width: 71%;
   transition: height 0.5s; /* 올바른 구문 */
+}
+#footer .f_help li:hover .f_smenu a {
+  margin-bottom: 3px;
 }
 #footer .f_smenu {
   display: none;
