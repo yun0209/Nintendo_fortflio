@@ -474,13 +474,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 @media (max-width: 770px) {
   #mContent .redB {
-    max-width: 100%;
-    height: 81vh;
-  }
-}
-@media (max-width: 500px) {
-  #mContent .redB {
-    height: 69vh;
+    height: 1519px;
   }
 }
 #mContent .redB p {
