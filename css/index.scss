@@ -844,7 +844,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         }
     }
     .crdiv{
-        max-width: 1400px;
+        @media (min-width:1400px) {
+            max-width: 1400px;
+            height: 61vh;
+        }
+        
         ul{
             li{
             
@@ -852,45 +856,60 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                 width: 335px;
                 height: 550px;
                 background: url(../img/png/cr_img_j.png)no-repeat;
-                background-size: 50vh;
+                background-size: 45vh;
                 background-position: top;
                 background-color: #EFEFEF;
                 &:hover{
                     transform: scale(1.1);
                     transition: 0.5s;
                 }
+                @media (max-width:402px) {
+                    background-size: 19vh;
+                    width: 274px;
+                    height: 449px;
+                    &:hover{
+                        transform: unset;
+                        
+                    }
+                    .cr_box{
+                    max-width : 80%;
+                    height: 80%;
+                    }
+
+                }
+                .cr_box{
+                    bottom: 0;
+                    width: 305px;
+                    height: 250px;
+                    border-radius: 10%;
+                    padding: 30px 0 40px 0;
+                    transform: translateX(-50%) translateY(-7%);
+                    left: 50%;
+                    p{
+                        
+                        span{
+                            display: inline-block;
+                            color: #fff;
+                            width: 90px;
+                            height: 30px;
+                            background: url(../img/svg/cr_button.svg);
+                            
+                        }
+                    }
+                    h3{
+                        color: #033333;
+                    }
+            
+
+            
+            
+                }
                     
                         
     
                 
             }
-            .cr_box{
-                        width: 305px;
-                        height: 250px;
-                        border-radius: 10%;
-                        margin-left: auto;
-                        margin-right: auto;
-                        margin-top: 250px;
-                        padding: 30px 0 40px 0;
-                        p{
-                            
-                            span{
-                                display: inline-block;
-                                color: #fff;
-                                width: 90px;
-                                height: 30px;
-                                background: url(../img/svg/cr_button.svg);
-                                
-                            }
-                        }
-                        h3{
-                            color: #033333;
-                        }
-                
-
-                
-                
-            }
+            
         }
     }
 }

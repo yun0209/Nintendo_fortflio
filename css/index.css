@@ -764,15 +764,18 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 #crContent h2 span {
   color: red !important;
 }
-#crContent .crdiv {
-  max-width: 1400px;
+@media (min-width: 1400px) {
+  #crContent .crdiv {
+    max-width: 1400px;
+    height: 61vh;
+  }
 }
 #crContent .crdiv ul li {
   border-radius: 30px;
   width: 335px;
   height: 550px;
   background: url(../img/png/cr_img_j.png) no-repeat;
-  background-size: 50vh;
+  background-size: 45vh;
   background-position: top;
   background-color: #EFEFEF;
 }
@@ -780,23 +783,37 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   transform: scale(1.1);
   transition: 0.5s;
 }
-#crContent .crdiv ul .cr_box {
+@media (max-width: 402px) {
+  #crContent .crdiv ul li {
+    background-size: 19vh;
+    width: 274px;
+    height: 449px;
+  }
+  #crContent .crdiv ul li:hover {
+    transform: unset;
+  }
+  #crContent .crdiv ul li .cr_box {
+    max-width: 80%;
+    height: 80%;
+  }
+}
+#crContent .crdiv ul li .cr_box {
+  bottom: 0;
   width: 305px;
   height: 250px;
   border-radius: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 250px;
   padding: 30px 0 40px 0;
+  transform: translateX(-50%) translateY(-7%);
+  left: 50%;
 }
-#crContent .crdiv ul .cr_box p span {
+#crContent .crdiv ul li .cr_box p span {
   display: inline-block;
   color: #fff;
   width: 90px;
   height: 30px;
   background: url(../img/svg/cr_button.svg);
 }
-#crContent .crdiv ul .cr_box h3 {
+#crContent .crdiv ul li .cr_box h3 {
   color: #033333;
 }
 
