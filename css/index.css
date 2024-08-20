@@ -159,6 +159,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   line-height: normal;
   letter-spacing: -0.68px;
 }
+@media (max-width: 770px) {
+  .footer_T {
+    font-size: 12px;
+  }
+}
 
 .m_title {
   font-size: 70px;
@@ -846,10 +851,14 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     flex-direction: column;
   }
 }
+#footer .f_help li {
+  padding: 0 10% !important;
+}
 #footer .f_help li:hover .f_smenu {
   display: flex;
   flex-direction: column;
   height: 60px;
+  width: 30%;
   transition: height 0.5s; /* 올바른 구문 */
 }
 #footer .f_smenu {
@@ -858,7 +867,12 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 #footer .f_about {
   max-width: 1400px;
-  padding: 50px;
+  padding: 10%;
+}
+@media (min-width: 1400px) {
+  #footer .f_about {
+    padding: 54px;
+  }
 }
 #footer .f_about .icons .sns_icon {
   width: 173px !important;
