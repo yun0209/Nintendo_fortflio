@@ -127,8 +127,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 .b_Menu {
   font-size: 15px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: normal;
+  color: white;
 }
 
 .b_MenuB {
@@ -136,6 +137,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  color: white;
 }
 
 .text-black {
@@ -816,25 +818,43 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   background-color: #F00;
 }
 #footer .f_help {
-  border-bottom: 1px solid #fff;
+  border-bottom: unset;
 }
-#footer .f_help ul {
-  max-width: 1400px;
-  margin: 0 auto !important;
+@media (min-width: 1400px) {
+  #footer .f_help {
+    border-bottom: 1px solid #fff;
+  }
+  #footer .f_help ul {
+    max-width: 1400px;
+    margin: 0 auto !important;
+  }
+  #footer .f_help ul li {
+    border: 1px solid #FF9595;
+    padding-left: 50px !important;
+    padding-top: 20px !important;
+    min-width: 352px;
+    min-height: 250px;
+  }
+  #footer .f_help ul li p {
+    color: white;
+  }
+  #footer .f_help ul li a {
+    margin-bottom: 0.75rem;
+  }
+  #footer .f_help ul li .f_smenu {
+    display: flex;
+    flex-direction: column;
+  }
 }
-#footer .f_help ul li {
-  border: 1px solid #FF9595;
-  padding-left: 50px !important;
-  padding-top: 20px !important;
-  min-width: 352px;
-  min-height: 250px;
+#footer .f_help li:hover .f_smenu {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  transition: height 0.5s; /* 올바른 구문 */
 }
-#footer .f_help ul li p {
-  color: white;
-}
-#footer .f_help ul li a {
-  margin-bottom: 0.75rem;
-  color: white;
+#footer .f_smenu {
+  display: none;
+  flex-direction: column;
 }
 #footer .f_about {
   max-width: 1400px;
