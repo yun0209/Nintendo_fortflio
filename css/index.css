@@ -786,7 +786,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 @media (max-width: 402px) {
   #crContent .crdiv ul li {
-    background-size: 35vh;
     width: 274px;
     height: 449px;
   }
