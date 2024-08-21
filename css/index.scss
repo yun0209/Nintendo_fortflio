@@ -27,13 +27,22 @@ body {
     display: flex;
 }
 
-.jsb {
-    justify-content: space-between;
+button{
+    margin: 0;
+    padding: 0;
+    background-color: unset;
+    border: 0;
 }
 
-.aic {
-    align-items: center;
+.bi-list, 
+.bi-x {
+    font-size: 2.5rem;
+   
+    &::before{
+        font-weight: 900 !important;
+    }
 }
+
 
 a {
     text-decoration: none !important;
@@ -61,16 +70,15 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     padding-left: 70px !important;
 }
 
-// .w-100{
-//     width: 100%;
-// }
-// .container{
-//     max-width: 1280px;
-//     margin: 0 auto;
-// }
-// .px-4{
-//     padding: 0 3rem;
-// }
+
+.sing_up{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    @media (min-width:600px) {
+     font-size: 15px;
+    }
+}
 
 //대메뉴 텍스트
 .gnbT{
@@ -78,6 +86,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    @media (max-width:1400px) {
+        font-size: 20px;
+    }
 
 }
 
@@ -323,7 +334,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     overflow: hidden;
     transform: translateX(-50%);
     left: 50%;
-    width: 1728px !important;
+    max-width: 1728px ;
+    width: 80%;
     top: 90px;
     position: absolute;
     z-index: 1000;
@@ -362,8 +374,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     @media (max-width:991px) {
         .m_gnb{
             left: 0;
-            top: 70px;
+            top: 67px;
             position: absolute;
+            z-index: 100;
             .gnb {
                 padding: 9% !important;
                 width: 100vw;
@@ -401,6 +414,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                 transform: scale(0.8);
                 
             }
+        }
+        button{
+            
         }
     }
     
@@ -1031,4 +1047,16 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         }
     }
     
+}
+
+
+.menuBkg #hd:before{
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 7%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.596);
 }

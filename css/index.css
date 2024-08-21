@@ -33,12 +33,20 @@ body {
   display: flex;
 }
 
-.jsb {
-  justify-content: space-between;
+button {
+  margin: 0;
+  padding: 0;
+  background-color: unset;
+  border: 0;
 }
 
-.aic {
-  align-items: center;
+.bi-list,
+.bi-x {
+  font-size: 2.5rem;
+}
+.bi-list::before,
+.bi-x::before {
+  font-weight: 900 !important;
 }
 
 a {
@@ -71,11 +79,27 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   padding-left: 70px !important;
 }
 
+.sing_up {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+}
+@media (min-width: 600px) {
+  .sing_up {
+    font-size: 15px;
+  }
+}
+
 .gnbT {
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (max-width: 1400px) {
+  .gnbT {
+    font-size: 20px;
+  }
 }
 
 .titleT {
@@ -332,7 +356,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     overflow: hidden;
     transform: translateX(-50%);
     left: 50%;
-    width: 1728px !important;
+    max-width: 1728px;
+    width: 80%;
     top: 90px;
     position: absolute;
     z-index: 1000;
@@ -359,8 +384,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 @media (max-width: 991px) {
   #hd .m_gnb {
     left: 0;
-    top: 70px;
+    top: 67px;
     position: absolute;
+    z-index: 100;
   }
   #hd .m_gnb .gnb {
     padding: 9% !important;
@@ -385,7 +411,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 #hd .myicon a img {
   transform: scale(0.8);
 }
-
 #mainBanner {
   justify-content: space-between;
 }
@@ -907,4 +932,15 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 #footer .df p {
   margin-bottom: 0.5rem !important;
+}
+
+.menuBkg #hd:before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 7%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.596);
 }
