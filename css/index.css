@@ -99,6 +99,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 @media (max-width: 1400px) {
   .gnbT {
     font-size: 20px;
+    color: white;
   }
 }
 
@@ -940,7 +941,14 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   left: 0;
   position: fixed;
   right: 0;
-  top: 7%;
+  top: 12%;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.596);
+}
+@media (min-width: 991px) {
+  .menuBkg #hd:before {
+    content: "";
+    position: unset;
+    background-color: unset;
+  }
 }
