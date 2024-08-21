@@ -359,16 +359,42 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
             }
         }
     }
-    .gnb {
-        .gnb_li a {
-            color: #474545 !important;
-
-            &:hover {
-                color: red !important;
+    @media (max-width:991px) {
+        .m_gnb{
+            left: 0;
+            top: 70px;
+            position: absolute;
+            .gnb {
+                padding: 9% !important;
+                width: 100vw;
+                border-radius: 0 0 45px 45px;
+                background-color: red;
+                height: 58vh;
+                .gnb_li a {
+                    color: #ffffff !important;
+        
+                    &:hover {
+                        color: rgb(0, 0, 0) !important;
+                    }
+                }
+                
             }
         }
     }
-
+    .m_gnb{
+        
+        .gnb {
+            
+            .gnb_li a {
+                color: #474545 ;
+    
+                &:hover {
+                    color: red ;
+                }
+            }
+            
+        }
+    }
     .myicon {
         a {
             img {
@@ -413,22 +439,20 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         }
     
         .smenu{
+            width: 906px;
             transform: translateX(-50%) translateY(-50%);
             left: 50%;
-            
-            position: absolute;
+            position: relative;
             display: grid;
-            
             height: 113px;
             background-image: url(../img/png/submenu_bar.png);
             background-repeat: no-repeat;
-            background-position: center;
-            background-size: auto 100%;
 
             ul{
+                top: 50%;
                 width: 878px;
-                position: relative;
-                transform: translateY(-5px) translateX(-1%);
+                position: absolute;
+                transform: translateY(-72%);
                 li{
                     text-wrap: nowrap;
                      a{

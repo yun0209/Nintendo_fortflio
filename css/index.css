@@ -356,11 +356,31 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   display: block;
   max-width: 40vw;
 }
-#hd .gnb .gnb_li a {
-  color: #474545 !important;
+@media (max-width: 991px) {
+  #hd .m_gnb {
+    left: 0;
+    top: 70px;
+    position: absolute;
+  }
+  #hd .m_gnb .gnb {
+    padding: 9% !important;
+    width: 100vw;
+    border-radius: 0 0 45px 45px;
+    background-color: red;
+    height: 58vh;
+  }
+  #hd .m_gnb .gnb .gnb_li a {
+    color: #ffffff !important;
+  }
+  #hd .m_gnb .gnb .gnb_li a:hover {
+    color: rgb(0, 0, 0) !important;
+  }
 }
-#hd .gnb .gnb_li a:hover {
-  color: red !important;
+#hd .m_gnb .gnb .gnb_li a {
+  color: #474545;
+}
+#hd .m_gnb .gnb .gnb_li a:hover {
+  color: red;
 }
 #hd .myicon a img {
   transform: scale(0.8);
@@ -383,20 +403,20 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   }
 }
 #mainBanner .mainp .smenu {
+  width: 906px;
   transform: translateX(-50%) translateY(-50%);
   left: 50%;
-  position: absolute;
+  position: relative;
   display: grid;
   height: 113px;
   background-image: url(../img/png/submenu_bar.png);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 100%;
 }
 #mainBanner .mainp .smenu ul {
+  top: 50%;
   width: 878px;
-  position: relative;
-  transform: translateY(-5px) translateX(-1%);
+  position: absolute;
+  transform: translateY(-72%);
 }
 #mainBanner .mainp .smenu ul li {
   text-wrap: nowrap;
