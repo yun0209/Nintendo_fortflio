@@ -63,13 +63,15 @@
             <div class="mainp overflow-hidden ">
                 
                 <p>
-                    <a href="https://www.nintendo.com/jp">
+                   
                         <span class="main_B">
-                            <img src="./img/png/main_Mimg.png" alt="" class="d-lg-none">
-                            <img src="./img/png/mario_main.jpg" alt="" class="d-none d-lg-block">
+                            <a href="https://www.nintendo.com/jp">
+                                <img src="./img/png/main_Mimg.png" alt="" class="d-lg-none gradient-animation">
+                                <img src="./img/png/mario_main.jpg" alt="" class="d-none d-lg-block">
+                            </a>
                         </span>
                         
-                    </a>
+                    
                 </p>
                 <div class="smenu d-none d-lg-block">
                     <ul class="col-12 sb_menuT me-auto ms-auto img-fluid fontBase d-flex align-items-center  justify-content-center">
@@ -824,23 +826,23 @@
       <script>
         const gnbM = document.querySelector(".gnb");
         const myButton = document.querySelector(".myicon button");
-        const menuIcon = document.querySelector(".myicon button i")
+        const menuIcon = document.querySelector(".myicon button i");
 
         myButton.addEventListener("click", function() {
-            if (gnbM.classList.contains("d-none") && menuIcon.classList.contains("bi-list")) {
-                menuIcon.classList.remove("bi-list");
-                menuIcon.classList.add("bi-x");
-                gnbM.classList.remove("d-none");
-                gnbM.classList.add("d-block");
-                document.body.classList.add("menuBkg")
-            } else {
-                menuIcon.classList.remove("bi-x");
-                menuIcon.classList.add("bi-list");
-                gnbM.classList.remove("d-block");
-                gnbM.classList.add("d-none");
-                document.body.classList.remove("menuBkg")
-            }
+            const isMenuClosed = gnbM.classList.contains("d-none");
+
+            // 메뉴가 열리고 닫힐떄 클래스 추가 & 제거
+            gnbM.classList.toggle("d-none", !isMenuClosed);
+            gnbM.classList.toggle("d-block", isMenuClosed);
+
+            // 메뉴가 닫히고 열릴떄의 메뉴바  상태
+            menuIcon.classList.toggle("bi-list", !isMenuClosed);
+            menuIcon.classList.toggle("bi-x", isMenuClosed);
+
+            // 메뉴가 열리면 배경색 추가
+            document.body.classList.toggle("menuBkg", isMenuClosed);
         });
+
 
       </script>
 

@@ -25,6 +25,17 @@
     opacity: 100%;
   }
 }
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 body {
   cursor: url("/img/svg/op_mushroom.svg"), auto;
 }
@@ -416,17 +427,15 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   justify-content: space-between;
 }
 #mainBanner .mainp {
+  width: 100%;
   margin-top: 70px;
 }
 #mainBanner .mainp p a img {
   border-radius: unset;
-  max-width: 100%;
-}
-@media (max-width: 770px) {
-  #mainBanner .mainp p a .main_B img {
-    border-radius: unset;
-    max-width: 100%;
-  }
+  width: 100%;
+  background: linear-gradient(90deg, red, pink, yellow, purple, blue);
+  background-size: 500% 500% !important;
+  animation: gradientMove 10s ease infinite !important;
 }
 #mainBanner .mainp .smenu {
   width: 906px;
@@ -454,6 +463,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   color: #924408 !important;
 }
 @media (min-width: 1400px) {
+  #mainBanner .mainp {
+    width: unset;
+  }
   #mainBanner .mainp p a img {
     border-radius: 84px;
     max-width: 100%;
