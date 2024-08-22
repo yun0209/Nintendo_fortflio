@@ -19,18 +19,32 @@
            opacity: 100%;}
 }
 
-
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
+@keyframes red_stMove {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 body {
     cursor: url('/img/svg/op_mushroom.svg'),auto;
   }
@@ -408,20 +422,17 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
             }
         }
     }
-    .m_gnb{
-        
-        .gnb {
-            
-            .gnb_li a {
-                color: #474545 ;
     
-                &:hover {
-                    color: red ;
-                }
-            }
             
+    .gnb_li a {
+        color: #474545 ;
+
+        &:hover {
+            color: red ;
         }
     }
+            
+  
     .myicon {
         a {
             img {
@@ -437,30 +448,66 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 
 #mainBanner{
+    .main_ani{
+        position: relative;
+        overflow: hidden;
+        
+        height: 70vw;
+        width: 100%;
+        background: radial-gradient(circle, 
+            rgba(44,201,240,1) 0%, 
+            rgba(155,167,208,1) 22%, 
+            rgba(245,130,226,1) 39%, 
+            rgba(250,224,78,1) 80%);
+        background-size: 150% 150%;
+        // position: absolute;
+        // top: -50%;
+        // left: -50%;
+        
+        animation: moveBackground 5s linear infinite;
+        img{
+            width: 100%;
+            position: relative;
+            z-index: 10;
+        }
+        @media (min-width:1400px) {
+            border-radius: 4%;
+            width: 1824px;
+            height: 47vw;
+            img{
+                width: unset;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        
+        
+
+    }
+    .redSt{
+        display: block;
+        position: absolute;
+        left: 23px;
+        top: -32px;
+        width: 100%;
+        height: 95vw;
+        background-size: cover !important;
+        background: url(../img/png/star_red.png) no-repeat;
+        background-position: center;
+        animation: red_stMove 5s linear infinite;
+    }
+
+           
+            
+       
+     
     justify-content: space-between;
     .mainp{
         width: 100%;
         margin-top: 70px;
         
-        p{
-            a{
-                
-
-                    img{
-                            border-radius: unset;
-                            width: 100%;
-                            background: linear-gradient(90deg, red, pink, yellow, purple, blue);
-                            background-size: 500% 500% !important;
-                            animation: gradientMove 10s ease infinite !important;
-    
-                    }
-                
-            
-            }
-            
-        }
-    
         .smenu{
+            z-index: 10;
             width: 906px;
             transform: translateX(-50%) translateY(-50%);
             left: 50%;
@@ -488,17 +535,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         }
         @media (min-width:1400px) {
             width: unset;
-            p{
-                a{
-                    img{
-                        border-radius: 84px;
-                        max-width: 100%;
-    
-                    }
-                        
-                    
-                }
-            }
+            
         }
         
     }

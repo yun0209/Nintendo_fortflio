@@ -25,15 +25,29 @@
     opacity: 100%;
   }
 }
-@keyframes gradientMove {
+@keyframes moveBackground {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 0%;
+  }
+}
+@keyframes red_stMove {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 body {
@@ -414,10 +428,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     color: rgb(0, 0, 0) !important;
   }
 }
-#hd .m_gnb .gnb .gnb_li a {
+#hd .gnb_li a {
   color: #474545;
 }
-#hd .m_gnb .gnb .gnb_li a:hover {
+#hd .gnb_li a:hover {
   color: red;
 }
 #hd .myicon a img {
@@ -426,18 +440,50 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 #mainBanner {
   justify-content: space-between;
 }
+#mainBanner .main_ani {
+  position: relative;
+  overflow: hidden;
+  height: 70vw;
+  width: 100%;
+  background: radial-gradient(circle, rgb(44, 201, 240) 0%, rgb(155, 167, 208) 22%, rgb(245, 130, 226) 39%, rgb(250, 224, 78) 80%);
+  background-size: 150% 150%;
+  animation: moveBackground 5s linear infinite;
+}
+#mainBanner .main_ani img {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+@media (min-width: 1400px) {
+  #mainBanner .main_ani {
+    border-radius: 4%;
+    width: 1824px;
+    height: 47vw;
+  }
+  #mainBanner .main_ani img {
+    width: unset;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+#mainBanner .redSt {
+  display: block;
+  position: absolute;
+  left: 23px;
+  top: -32px;
+  width: 100%;
+  height: 95vw;
+  background-size: cover !important;
+  background: url(../img/png/star_red.png) no-repeat;
+  background-position: center;
+  animation: red_stMove 5s linear infinite;
+}
 #mainBanner .mainp {
   width: 100%;
   margin-top: 70px;
 }
-#mainBanner .mainp p a img {
-  border-radius: unset;
-  width: 100%;
-  background: linear-gradient(90deg, red, pink, yellow, purple, blue);
-  background-size: 500% 500% !important;
-  animation: gradientMove 10s ease infinite !important;
-}
 #mainBanner .mainp .smenu {
+  z-index: 10;
   width: 906px;
   transform: translateX(-50%) translateY(-50%);
   left: 50%;
@@ -465,10 +511,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 @media (min-width: 1400px) {
   #mainBanner .mainp {
     width: unset;
-  }
-  #mainBanner .mainp p a img {
-    border-radius: 84px;
-    max-width: 100%;
   }
 }
 
