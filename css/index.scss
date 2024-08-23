@@ -500,7 +500,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         // position: absolute;
         // top: -50%;
         // left: -50%;
-        animation: moveBackground 5s linear infinite;
+        animation: moveBackground 5s linear 5s infinite;
         
         img{
             width: 100%;
@@ -627,9 +627,12 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         }
     }
     .news_img1 img {
-        width: 499px;
-        height: 301;
+        width: 500px;
+        height: 300px;
         border-radius: 15px;
+        @media (max-width:1400px) {
+            height: unset;
+        }
     }
     .swiper-wrapper{
         
@@ -777,7 +780,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                         a{
                             img{
                                 width: 450px;
-                                height: 300px;
+                                
                                 border-radius: 15px;
                                 @media (max-width:770px) {
                                     width: 300px;
@@ -840,8 +843,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     
             }
             iframe{
-                display: none;
-                border-radius: 20%;
+                position: fixed;
+                border-radius: 30px;
             }
             .youtube_img {
                 position: relative;
@@ -867,7 +870,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                 &:hover {
                     transform: scale(1.1);
                 }
-                p{
+                div{
                     img{
                         left: 10%;
                         transform: translateY(-50%);
@@ -943,15 +946,23 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         display: flex;
         justify-content: center;
         align-items: center;
+        &:hover{
+            .leadcopy{
+                color: red;
+            }
+        }
         p{
             text-wrap: nowrap;
             color: #3e3e3e;
         }
     }
     .news_img1 img {
-        width: 499px;
-        height: 301;
+        height: 300px;
+        width: 500px;
         border-radius: 15px;
+        @media (max-width:1400px) {
+            height: unset;
+        }
     }
     .swiper-wrapper{
         
@@ -1155,6 +1166,4 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         background-color: unset;
     }
 }
-.up{
-    
-}
+

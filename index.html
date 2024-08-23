@@ -11,10 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
 
-    <!-- 부트스트랩 & 스와이퍼 CDN -->
+    <!-- 부트스트랩 & 스와이퍼 CDN &aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <!-- 커스터마이징 -->
     <link rel="stylesheet" href="./css/index.css">
@@ -89,7 +91,11 @@
     </section>
 
 
-    <section id="news_swiper" class="col cententB">
+    <section id="news_swiper" class="col cententB"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0">
         <div class="">
             <h2 class="ms-auto me-auto ti_Blank fontBase titleT ">
                 <p class=" text-center w-100">
@@ -98,14 +104,14 @@
                 <p class="text-center w-100">만나보세요!</p>  
             </h2>
             <div class="position-relative">
-                <div class="swiper mySwiper ">
+                <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                           
                         <div class="swiper-slide">
                             <div class="news_img1  rounded-30 ">
                                 <p class="ct_Blank">
                                     <a href="">
-                                        <img src="./img/png/prinssaspich .png" class="img-fluid" alt="">
+                                        <img src="./img/png/prinssaspich.png" class="img-fluid" alt="">
                                     </a>
                                 </p>
                                 <p class="leadcopy fontNoto col-9 ms-4  ">
@@ -121,13 +127,13 @@
                             <div class="news_img1  rounded-30 ">
                                 <p class="ct_Blank">
                                     <a href="">
-                                        <img src="./img/png/prinssaspich .png" class="img-fluid" alt="">
+                                        <img src="./img/png/foreverBlue.png" class="img-fluid" alt="">
                                     </a>
                                 </p>
                                 <p class="leadcopy fontNoto col-9 ms-4  ">
-                                    프린세스 피치 디자인의 플레티넘 포인트 교환 상품 출시!
+                                    포에버 블루 루미너스 '이벤트 투어'가
                                     <br>
-                                    쇼트무비도 공개되었습니다.
+                                    곧 업데이트 됩니다.
                                 </p>
                             
                             </div>
@@ -137,13 +143,13 @@
                             <div class="news_img1  rounded-30 ">
                                 <p class="ct_Blank">
                                     <a href="">
-                                        <img src="./img/png/prinssaspich .png" class="img-fluid" alt="">
+                                        <img src="./img/png/LuigiNew.png" class="img-fluid" alt="">
                                     </a>
                                 </p>
                                 <p class="leadcopy fontNoto col-9 ms-4  ">
-                                    프린세스 피치 디자인의 플레티넘 포인트 교환 상품 출시!
+                                    루이지 맨션 소개영상,튜토리얼,
                                     <br>
-                                    쇼트무비도 공개되었습니다.
+                                    TVCM이 공개되었습니다!
                                 </p>
                             
                             </div>
@@ -153,13 +159,13 @@
                             <div class="news_img1  rounded-30 ">
                                 <p class="ct_Blank">
                                     <a href="">
-                                        <img src="./img/png/prinssaspich .png" class="img-fluid" alt="">
+                                        <img src="./img/png/nintendoNew.png" class="img-fluid" alt="">
                                     </a>
                                 </p>
                                 <p class="leadcopy fontNoto col-9 ms-4  ">
-                                    프린세스 피치 디자인의 플레티넘 포인트 교환 상품 출시!
+                                    닌텐도 온라인 스토어 
                                     <br>
-                                    쇼트무비도 공개되었습니다.
+                                    개인정보처리방침 변경 고지
                                 </p>
                             
                             </div>
@@ -169,13 +175,13 @@
                             <div class="news_img1  rounded-30 ">
                                 <p class="ct_Blank">
                                     <a href="">
-                                        <img src="./img/png/prinssaspich .png" class="img-fluid" alt="">
+                                        <img src="./img/png/paper_marioNew.png" class="img-fluid" alt="">
                                     </a>
                                 </p>
                                 <p class="leadcopy fontNoto col-9 ms-4  ">
-                                    프린세스 피치 디자인의 플레티넘 포인트 교환 상품 출시!
+                                    페이퍼 마리오 1000년의 문 
                                     <br>
-                                    쇼트무비도 공개되었습니다.
+                                    체험 이벤트가 개최되었습니다!
                                 </p>
                             
                             </div>
@@ -197,7 +203,12 @@
 
     </section>
     
-    <section id="mContent" class="cententB">
+    <section id="mContent" class="cententB" 
+    data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="300"
+    data-aos-offset="0">
+        <div class="swiper-wrapper">
         <div class="redB ms-auto me-auto">
             <div class="ti_BlankTop ti_Blank">
                 <div class="yBox">
@@ -207,7 +218,7 @@
                 <h2 class="text-center mb-5 m_title fontBase">
                     <p>It's-a me,
                     </p>
-                    <p>Mario !</p>
+                    <p>Mario!</p>
                 </h2>
                 <div class="leadcopy text-center fontNoto">
                     <p class="mb-3">
@@ -250,7 +261,7 @@
                     마리오 시리즈
                     
                 </p>
-                <img src="./img/png/y_bar.png"  class="img-fluid" alt="">
+                <img src="./img/png/y_bar.png" class="img-fluid" alt="">
             </div>
             <div class="rZone d-flex align-items-center mt-lg-3 justify-content-center ">
                 <div class="d-flex align-items-center justify-content-center ">
@@ -269,41 +280,41 @@
                                 <div class="swiper-slide">
                                     <p class="fontNoto leadcopy text-center">
                                         <a href="#">
-                                            <img src="./img/png/20230912___1920x1080.jpg" alt="" class="mb-4 img-fluid">
+                                            <img src="./img/png/paper_marioNew.png" alt="" class="mb-4 img-fluid">
                                         </a>
-                                        슈퍼마리오 브라더스 원더
+                                        슈퍼마리오 페이퍼 마리오
                                     </p>
                                 </div>
                                 <div class="swiper-slide">
                                     <p class="fontNoto leadcopy text-center">
                                         <a href="#">
-                                            <img src="./img/png/20230912___1920x1080.jpg" alt="" class="mb-4 img-fluid">
+                                            <img src="./img/png/rpg.png" alt="" class="mb-4 img-fluid">
                                         </a>
-                                        슈퍼마리오 브라더스 원더
+                                        슈퍼마리오 RPG
                                     </p>
                                 </div>
                                 <div class="swiper-slide">
                                     <p class="fontNoto leadcopy text-center">
                                         <a href="#">
-                                            <img src="./img/png/20230912___1920x1080.jpg" alt="" class="mb-4 img-fluid">
+                                            <img src="./img/png/sorftJam.png" alt="" class="mb-4 img-fluid">
                                         </a>
-                                        슈퍼마리오 브라더스 원더
+                                        슈퍼마리오 잼버리 파티
                                     </p>
                                 </div>
                                 <div class="swiper-slide">
                                     <p class="fontNoto leadcopy text-center">
                                         <a href="#">
-                                            <img src="./img/png/20230912___1920x1080.jpg" alt="" class="mb-4 img-fluid">
+                                            <img src="./img/png/mVs_d.jpg" alt="" class="mb-4 img-fluid">
                                         </a>
-                                        슈퍼마리오 브라더스 원더
+                                        마리오 vS 동키콩
                                     </p>
                                 </div>
                                 <div class="swiper-slide">
                                     <p class="fontNoto leadcopy text-center">
                                         <a href="#">
-                                            <img src="./img/png/20230912___1920x1080.jpg" alt="" class="mb-4 img-fluid">
+                                            <img src="./img/png/puryworld.png" alt="" class="mb-4 img-fluid">
                                         </a>
-                                        슈퍼마리오 브라더스 원더
+                                        슈퍼마리오 퓨리월드
                                     </p>
                                 </div>
                             </div>
@@ -337,13 +348,15 @@
                 <div class="youtube_img  ms-auto me-auto mb-3 position-relative">
                     <button class="play-button position-absolute">
                     </button>
-                    <p><a href=""><img src="./img/png/movie_fontimg.png" alt="" class="img-fluid"></a></p>
-                </div>
-                <p>
-                    <iframe width="1400" height="500" src="https://www.youtube.com/embed/8m6Cz1GJG3s?si=KqEhZZxouBxX_Sfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-
+                    <div>
+                        <img src="./img/png/movie_fontimg.png" alt="" class="img-fluid">
+                    </div>
+                    <iframe width="1400" height="500" src="https://www.youtube.com/embed/8m6Cz1GJG3s?si=KqEhZZxouBxX_Sfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="d-none ifm">
                     </iframe>
-                </p>
+                </div>
+                
+                    
+                
                 
             </div>
             
@@ -352,7 +365,11 @@
     </section>
 
   
-    <section id="soft_Swiper" class="col cententB">
+    <section id="soft_Swiper" class="col cententB"
+    data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="300"
+    data-aos-offset="0">
         <div class="">
             <h2 class="ms-auto me-auto ti_Blank fontBase titleT">
                     <p class=" text-center w-100">
@@ -386,14 +403,32 @@
                             <div class="news_img1  rounded-30 ">
                                 <p class="ct_Blank">
                                     <a href="">
-                                        <img src="./img/png/mVs_d.jpg" class="img-fluid" alt="">
+                                        <img src="./img/png/paper_marioNew.png" class="img-fluid" alt="">
                                     </a>
                                 </p>
                                 <p class="leadcopy fontNoto col-9 ms-4 mb-2">
-                                    마리오 vs 동키콩
+                                    페이퍼 마리오 1000년의문
                                 </p>
                                 <p class="inT fontNoto ms-4">
-                                    2024.2.16
+                                    2024.5.23
+                                    <br>
+                                    패키지버전 / 다운로드버전
+                                </p>
+                            
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news_img1  rounded-30 ">
+                                <p class="ct_Blank">
+                                    <a href="">
+                                        <img src="./img/png/prinssaspich.png" class="img-fluid" alt="">
+                                    </a>
+                                </p>
+                                <p class="leadcopy fontNoto col-9 ms-4 mb-2">
+                                    프린세스 피치 showtiem!
+                                </p>
+                                <p class="inT fontNoto ms-4">
+                                    2024.3.22
                                     <br>
                                     패키지버전 / 다운로드버전 / 체험판
                                 </p>
@@ -404,16 +439,16 @@
                             <div class="news_img1  rounded-30 ">
                                 <p class="ct_Blank">
                                     <a href="">
-                                        <img src="./img/png/mVs_d.jpg" class="img-fluid" alt="">
+                                        <img src="./img/png/20230912___1920x1080.jpg" class="img-fluid" alt="">
                                     </a>
                                 </p>
                                 <p class="leadcopy fontNoto col-9 ms-4 mb-2">
-                                    마리오 vs 동키콩
+                                    슈퍼마리오 브라더스 원더
                                 </p>
                                 <p class="inT fontNoto ms-4">
-                                    2024.2.16
+                                    2023.10.20
                                     <br>
-                                    패키지버전 / 다운로드버전 / 체험판
+                                    패키지버전 / 다운로드버전
                                 </p>
                             
                             </div>
@@ -422,16 +457,16 @@
                             <div class="news_img1  rounded-30 ">
                                 <p class="ct_Blank">
                                     <a href="">
-                                        <img src="./img/png/mVs_d.jpg" class="img-fluid" alt="">
+                                        <img src="./img/png/zelda.png" class="img-fluid" alt="">
                                     </a>
                                 </p>
                                 <p class="leadcopy fontNoto col-9 ms-4 mb-2">
-                                    마리오 vs 동키콩
+                                    젤다의 전설 티어스 오브 더 킹덤
                                 </p>
                                 <p class="inT fontNoto ms-4">
-                                    2024.2.16
+                                    2023.05.12
                                     <br>
-                                    패키지버전 / 다운로드버전 / 체험판
+                                    패키지버전 / 다운로드버전 
                                 </p>
                             
                             </div>
@@ -440,34 +475,16 @@
                             <div class="news_img1  rounded-30 ">
                                 <p class="ct_Blank">
                                     <a href="">
-                                        <img src="./img/png/mVs_d.jpg" class="img-fluid" alt="">
+                                        <img src="./img/png/animal.png"  class="img-fluid"alt="">
                                     </a>
                                 </p>
                                 <p class="leadcopy fontNoto col-9 ms-4 mb-2">
-                                    마리오 vs 동키콩
+                                    모여봐요 동물의 숲 
                                 </p>
                                 <p class="inT fontNoto ms-4">
-                                    2024.2.16
+                                    2020.3.20
                                     <br>
-                                    패키지버전 / 다운로드버전 / 체험판
-                                </p>
-                            
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="news_img1  rounded-30 ">
-                                <p class="ct_Blank">
-                                    <a href="">
-                                        <img src="./img/png/mVs_d.jpg"  class="img-fluid"alt="">
-                                    </a>
-                                </p>
-                                <p class="leadcopy fontNoto col-9 ms-4 mb-2">
-                                    마리오 vs 동키콩
-                                </p>
-                                <p class="inT fontNoto ms-4">
-                                    2024.2.16
-                                    <br>
-                                    패키지버전 / 다운로드버전 / 체험판
+                                    패키지버전 / 다운로드버전 
                                 </p>
                             
                             </div>
@@ -483,7 +500,11 @@
         
 
     </section>
-    <section id="crContent" class="cententB">
+    <section id="crContent" class="cententB" 
+    data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="300"
+    data-aos-offset="0">
         <div class="">
             <h2 class="ms-auto me-auto ti_Blank fontBase titleT ">
                 <p class=" text-center w-100">
@@ -778,7 +799,7 @@
             },
             1800: {
                 slidesPerView: 3.6,
-                spaceBetween: 50,
+                spaceBetween: 20,
             }
 
             }
@@ -839,6 +860,27 @@
 
 
       </script>
+      
+      <script>
+        //마리오 무비 유튜브 
+        const ckimg = document.querySelector(".youtube_img img");
+        const iframeyou = document.querySelector(".youtube_img iframe");
+
+        ckimg.addEventListener("click", function() {
+            const playon = iframeyou.classList.contains("d-none");
+            // 마리오 뮤비 이미지 클릭시 body에 클래스 추가,d-none제거
+            iframeyou.classList.toggle("d-none",!playon);
+            iframeyou.classList.toggle("d-block",playon);
+            document.body.classList.toggle(".ifm",playon)
+        });
+
+        
+      </script>
+
+      <script>
+        AOS.init();
+      </script>
+      
 
     
    

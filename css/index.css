@@ -27,12 +27,14 @@
 }
 @keyframes moveBackground {
   0% {
+    display: none;
     background-position: 0% 0%;
   }
   25% {
     background-position: 100% 0%;
   }
   50% {
+    display: block;
     background-position: 100% 100%;
   }
   75% {
@@ -469,7 +471,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   width: 100%;
   background: radial-gradient(circle, rgb(44, 201, 240) 0%, rgb(155, 167, 208) 22%, rgb(245, 130, 226) 39%, rgb(250, 224, 78) 80%);
   background-size: 150% 150%;
-  animation: moveBackground 5s linear infinite;
+  animation: moveBackground 5s linear 5s infinite;
 }
 #mainBanner .main_ani img {
   width: 100%;
@@ -576,9 +578,14 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   }
 }
 #news_swiper .news_img1 img {
-  width: 499px;
-  height: 301;
+  width: 500px;
+  height: 300px;
   border-radius: 15px;
+}
+@media (max-width: 1400px) {
+  #news_swiper .news_img1 img {
+    height: unset;
+  }
 }
 #news_swiper .swiper-wrapper {
   width: 1920px;
@@ -717,7 +724,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 #mContent .redB .rZone .marioSwiper .swiper-slide p a img {
   width: 450px;
-  height: 300px;
   border-radius: 15px;
 }
 @media (max-width: 770px) {
@@ -780,8 +786,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   }
 }
 #mContent .redB .movie iframe {
-  display: none;
-  border-radius: 20%;
+  position: fixed;
+  border-radius: 30px;
 }
 #mContent .redB .movie .youtube_img {
   position: relative;
@@ -808,14 +814,14 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 #mContent .redB .movie .youtube_img:hover {
   transform: scale(1.1);
 }
-#mContent .redB .movie .youtube_img p img {
+#mContent .redB .movie .youtube_img div img {
   left: 10%;
   transform: translateY(-50%);
   top: 50%;
   position: absolute;
 }
 @media (max-width: 1400px) {
-  #mContent .redB .movie .youtube_img p img {
+  #mContent .redB .movie .youtube_img div img {
     transform: translateY(-50%);
     width: 37vw;
   }
@@ -866,14 +872,22 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   justify-content: center;
   align-items: center;
 }
+#soft_Swiper .swiper-slide:hover .leadcopy {
+  color: red;
+}
 #soft_Swiper .swiper-slide p {
   text-wrap: nowrap;
   color: #3e3e3e;
 }
 #soft_Swiper .news_img1 img {
-  width: 499px;
-  height: 301;
+  height: 300px;
+  width: 500px;
   border-radius: 15px;
+}
+@media (max-width: 1400px) {
+  #soft_Swiper .news_img1 img {
+    height: unset;
+  }
 }
 #soft_Swiper .swiper-wrapper {
   width: 1920px;
