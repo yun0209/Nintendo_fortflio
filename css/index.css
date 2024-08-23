@@ -479,9 +479,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 @media (min-width: 1400px) {
   #mainBanner .main_ani {
-    border-radius: 4%;
-    width: 1824px;
-    height: 47vw;
+    border-radius: 87px;
+    width: 95vw;
+    height: 900px;
   }
   #mainBanner .main_ani img {
     left: 50%;
