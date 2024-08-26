@@ -923,46 +923,107 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   border-radius: 30px;
   width: 335px;
   height: 550px;
-  background: url(../img/png/cr_img_j.png) no-repeat;
-  background-size: 45vh;
-  background-position: top;
   background-color: #EFEFEF;
 }
 #crContent .crdiv ul li:hover {
   transform: scale(1.1);
   transition: 0.5s;
 }
-@media (max-width: 402px) {
-  #crContent .crdiv ul li {
-    width: 274px;
-    height: 449px;
-  }
-  #crContent .crdiv ul li:hover {
-    transform: unset;
-  }
-  #crContent .crdiv ul li .cr_box {
-    max-width: 80%;
-    height: 80%;
-  }
-}
 #crContent .crdiv ul li .cr_box {
   bottom: 0;
   width: 305px;
   height: 250px;
-  border-radius: 10%;
+  border-radius: 20px;
   padding: 30px 0 40px 0;
   transform: translateX(-50%) translateY(-7%);
   left: 50%;
 }
 #crContent .crdiv ul li .cr_box p span {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #033333;
   display: inline-block;
   color: #fff;
-  width: 90px;
-  height: 30px;
-  background: url(../img/svg/cr_button.svg);
 }
 #crContent .crdiv ul li .cr_box h3 {
   color: #033333;
+}
+@media (max-width: 768px) {
+  #crContent .crdiv ul li .cr_box {
+    width: 90% !important;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+  }
+  #crContent .crdiv ul li .cr_box ui {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #crContent .crdiv ul li .cr_box ui li {
+    margin-bottom: 20px;
+    position: relative;
+    background-color: black;
+  }
+}
+#crContent .cr_j {
+  background: url(../img/png/cr_img_j.png) no-repeat;
+  background-position: top;
+  background-size: 45vh;
+}
+#crContent .cr_kby {
+  background: url(../img/png/kirby.png) no-repeat;
+  background-position: 50% 10%;
+  background-size: 30vh;
+}
+#crContent .cr_spl {
+  background: url(../img/png/splatoon.png) no-repeat;
+  background-position: top;
+  background-size: 45vh;
+}
+#crContent .cr_pik {
+  background: url("../img/png/pikmin.png") no-repeat;
+  background-size: 18vh;
+  background-position: 57% top;
+}
+#crContent #tabs .tads-nvi {
+  border: 0 !important;
+  background-color: unset !important;
+  width: 90% !important;
+}
+#crContent #tabs .tads-nvi li {
+  border-radius: 18px;
+  width: 70px;
+  height: 31px;
+}
+#crContent #tabs .tads-nvi li a {
+  color: black;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 700;
+}
+#crContent #tabs ul.ui-tabs-nav li {
+  background: rgb(189, 186, 186);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#crContent #tabs ul.ui-tabs-nav li:hover {
+  background: darkgray;
+}
+#crContent #tabs ul.ui-tabs-nav li.ui-tabs-active {
+  background: black !important;
+}
+#crContent #tabs ul.ui-tabs-nav li.ui-tabs-active a {
+  color: white !important;
+}
+#crContent #tabs ul.ui-tabs-nav li.ui-tabs-active:hover {
+  background: black !important;
+  color: white !important;
+}
+#crContent #tabs .tabs-content {
+  margin-top: 20px;
 }
 
 #footer {
