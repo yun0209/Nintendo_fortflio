@@ -27,14 +27,12 @@
 }
 @keyframes moveBackground {
   0% {
-    display: none;
     background-position: 0% 0%;
   }
   25% {
     background-position: 100% 0%;
   }
   50% {
-    display: block;
     background-position: 100% 100%;
   }
   75% {
@@ -789,6 +787,14 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   position: fixed;
   border-radius: 30px;
 }
+@media (max-width: 770px) {
+  #mContent .redB .movie iframe {
+    height: 300px;
+    width: 100%;
+    position: fixed;
+    border-radius: 30px;
+  }
+}
 #mContent .redB .movie .youtube_img {
   position: relative;
   width: 1400px;
@@ -805,7 +811,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   #mContent .redB .movie .youtube_img {
     width: 100%; /* 너비를 100%로 설정 */
     height: 300px;
-    padding-top: 56.25%; /* 16:9 비율 유지 (높이 비율을 맞추기 위해 사용) */
     background: url(../img/png/mario_movieM.png) no-repeat;
     background-size: cover;
     background-position: center;
@@ -813,6 +818,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 #mContent .redB .movie .youtube_img:hover {
   transform: scale(1.1);
+}
+@media (max-width: 1400px) {
+  #mContent .redB .movie .youtube_img:hover {
+    transform: none !important;
+  }
 }
 #mContent .redB .movie .youtube_img div img {
   left: 10%;

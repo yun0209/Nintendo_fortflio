@@ -845,6 +845,12 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
             iframe{
                 position: fixed;
                 border-radius: 30px;
+                @media (max-width:770px) {
+                    height: 300px;
+                    width: 100%;
+                    position: fixed;
+                    border-radius: 30px;
+                }
             }
             .youtube_img {
                 position: relative;
@@ -861,7 +867,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                 @media (max-width: 770px) {
                     width: 100%; /* 너비를 100%로 설정 */
                     height: 300px;
-                    padding-top: 56.25%; /* 16:9 비율 유지 (높이 비율을 맞추기 위해 사용) */
                     background: url(../img/png/mario_movieM.png) no-repeat;
                     background-size: cover;
                     background-position: center;
@@ -869,6 +874,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
             
                 &:hover {
                     transform: scale(1.1);
+                    @media (max-width:1400px) {
+                        transform: none !important;
+                    }
                 }
                 div{
                     img{
@@ -884,9 +892,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                     
                 }
             }
-            @media (max-width:770px) {
-                
-            }
+            
             .play-button {
                 width: 57px; /* 버튼 너비 */
                 height: 62px; /* 버튼 높이 */
